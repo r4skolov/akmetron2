@@ -1,0 +1,803 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>О компании</title>
+	<link rel="stylesheet" href="css/app.css">
+	<script>/*! @formatter:off modernizr 3.6.0 (Custom Build) | MIT https://modernizr.com/download/?-overflowscrolling-webp-setclasses !*/!function(e,n,t){function r(e,n){return typeof e===n}function o(){var e,n,t,o,i,s,a;for(var l in _)if(_.hasOwnProperty(l)){if(e=[],n=_[l],n.name&&(e.push(n.name.toLowerCase()),n.options&&n.options.aliases&&n.options.aliases.length))for(t=0;t<n.options.aliases.length;t++)e.push(n.options.aliases[t].toLowerCase());for(o=r(n.fn,"function")?n.fn():n.fn,i=0;i<e.length;i++)s=e[i],a=s.split("."),1===a.length?Modernizr[a[0]]=o:(!Modernizr[a[0]]||Modernizr[a[0]]instanceof Boolean||(Modernizr[a[0]]=new Boolean(Modernizr[a[0]])),Modernizr[a[0]][a[1]]=o),w.push((o?"":"no-")+a.join("-"))}}function i(e){var n=S.className,t=Modernizr._config.classPrefix||"";if(B&&(n=n.baseVal),Modernizr._config.enableJSClass){var r=new RegExp("(^|\\s)"+t+"no-js(\\s|$)");n=n.replace(r,"$1"+t+"js$2")}Modernizr._config.enableClasses&&(n+=" "+t+e.join(" "+t),B?S.className.baseVal=n:S.className=n)}function s(e,n){if("object"==typeof e)for(var t in e)b(e,t)&&s(t,e[t]);else{e=e.toLowerCase();var r=e.split("."),o=Modernizr[r[0]];if(2==r.length&&(o=o[r[1]]),"undefined"!=typeof o)return Modernizr;n="function"==typeof n?n():n,1==r.length?Modernizr[r[0]]=n:(!Modernizr[r[0]]||Modernizr[r[0]]instanceof Boolean||(Modernizr[r[0]]=new Boolean(Modernizr[r[0]])),Modernizr[r[0]][r[1]]=n),i([(n&&0!=n?"":"no-")+r.join("-")]),Modernizr._trigger(e,n)}return Modernizr}function a(e,n){return!!~(""+e).indexOf(n)}function l(){return"function"!=typeof n.createElement?n.createElement(arguments[0]):B?n.createElementNS.call(n,"http://www.w3.org/2000/svg",arguments[0]):n.createElement.apply(n,arguments)}function A(e){return e.replace(/([a-z])-([a-z])/g,function(e,n,t){return n+t.toUpperCase()}).replace(/^-/,"")}function u(e,n){return function(){return e.apply(n,arguments)}}function f(e,n,t){var o;for(var i in e)if(e[i]in n)return t===!1?e[i]:(o=n[e[i]],r(o,"function")?u(o,t||n):o);return!1}function c(n,t,r){var o;if("getComputedStyle"in e){o=getComputedStyle.call(e,n,t);var i=e.console;if(null!==o)r&&(o=o.getPropertyValue(r));else if(i){var s=i.error?"error":"log";i[s].call(i,"getComputedStyle returning null, its possible modernizr test results are inaccurate")}}else o=!t&&n.currentStyle&&n.currentStyle[r];return o}function p(e){return e.replace(/([A-Z])/g,function(e,n){return"-"+n.toLowerCase()}).replace(/^ms-/,"-ms-")}function d(){var e=n.body;return e||(e=l(B?"svg":"body"),e.fake=!0),e}function m(e,t,r,o){var i,s,a,A,u="modernizr",f=l("div"),c=d();if(parseInt(r,10))for(;r--;)a=l("div"),a.id=o?o[r]:u+(r+1),f.appendChild(a);return i=l("style"),i.type="text/css",i.id="s"+u,(c.fake?c:f).appendChild(i),c.appendChild(f),i.styleSheet?i.styleSheet.cssText=e:i.appendChild(n.createTextNode(e)),f.id=u,c.fake&&(c.style.background="",c.style.overflow="hidden",A=S.style.overflow,S.style.overflow="hidden",S.appendChild(c)),s=t(f,e),c.fake?(c.parentNode.removeChild(c),S.style.overflow=A,S.offsetHeight):f.parentNode.removeChild(f),!!s}function g(n,r){var o=n.length;if("CSS"in e&&"supports"in e.CSS){for(;o--;)if(e.CSS.supports(p(n[o]),r))return!0;return!1}if("CSSSupportsRule"in e){for(var i=[];o--;)i.push("("+p(n[o])+":"+r+")");return i=i.join(" or "),m("@supports ("+i+") { #modernizr { position: absolute; } }",function(e){return"absolute"==c(e,null,"position")})}return t}function h(e,n,o,i){function s(){f&&(delete U.style,delete U.modElem)}if(i=r(i,"undefined")?!1:i,!r(o,"undefined")){var u=g(e,o);if(!r(u,"undefined"))return u}for(var f,c,p,d,m,h=["modernizr","tspan","samp"];!U.style&&h.length;)f=!0,U.modElem=l(h.shift()),U.style=U.modElem.style;for(p=e.length,c=0;p>c;c++)if(d=e[c],m=U.style[d],a(d,"-")&&(d=A(d)),U.style[d]!==t){if(i||r(o,"undefined"))return s(),"pfx"==n?d:!0;try{U.style[d]=o}catch(v){}if(U.style[d]!=m)return s(),"pfx"==n?d:!0}return s(),!1}function v(e,n,t,o,i){var s=e.charAt(0).toUpperCase()+e.slice(1),a=(e+" "+x.join(s+" ")+s).split(" ");return r(n,"string")||r(n,"undefined")?h(a,n,o,i):(a=(e+" "+E.join(s+" ")+s).split(" "),f(a,n,t))}function y(e,n,r){return v(e,t,t,n,r)}var w=[],_=[],C={_version:"3.6.0",_config:{classPrefix:"",enableClasses:!0,enableJSClass:!0,usePrefixes:!0},_q:[],on:function(e,n){var t=this;setTimeout(function(){n(t[e])},0)},addTest:function(e,n,t){_.push({name:e,fn:n,options:t})},addAsyncTest:function(e){_.push({name:null,fn:e})}},Modernizr=function(){};Modernizr.prototype=C,Modernizr=new Modernizr;var b,S=n.documentElement,B="svg"===S.nodeName.toLowerCase();!function(){var e={}.hasOwnProperty;b=r(e,"undefined")||r(e.call,"undefined")?function(e,n){return n in e&&r(e.constructor.prototype[n],"undefined")}:function(n,t){return e.call(n,t)}}(),C._l={},C.on=function(e,n){this._l[e]||(this._l[e]=[]),this._l[e].push(n),Modernizr.hasOwnProperty(e)&&setTimeout(function(){Modernizr._trigger(e,Modernizr[e])},0)},C._trigger=function(e,n){if(this._l[e]){var t=this._l[e];setTimeout(function(){var e,r;for(e=0;e<t.length;e++)(r=t[e])(n)},0),delete this._l[e]}},Modernizr._q.push(function(){C.addTest=s}),Modernizr.addAsyncTest(function(){function e(e,n,t){function r(n){var r=n&&"load"===n.type?1==o.width:!1,i="webp"===e;s(e,i&&r?new Boolean(r):r),t&&t(n)}var o=new Image;o.onerror=r,o.onload=r,o.src=n}var n=[{uri:"data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoBAAEAAwA0JaQAA3AA/vuUAAA=",name:"webp"},{uri:"data:image/webp;base64,UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAABBxAR/Q9ERP8DAABWUDggGAAAADABAJ0BKgEAAQADADQlpAADcAD++/1QAA==",name:"webp.alpha"},{uri:"data:image/webp;base64,UklGRlIAAABXRUJQVlA4WAoAAAASAAAAAAAAAAAAQU5JTQYAAAD/////AABBTk1GJgAAAAAAAAAAAAAAAAAAAGQAAABWUDhMDQAAAC8AAAAQBxAREYiI/gcA",name:"webp.animation"},{uri:"data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAAAAAAfQ//73v/+BiOh/AAA=",name:"webp.lossless"}],t=n.shift();e(t.name,t.uri,function(t){if(t&&"load"===t.type)for(var r=0;r<n.length;r++)e(n[r].name,n[r].uri)})});var Q="Moz O ms Webkit",x=C._config.usePrefixes?Q.split(" "):[];C._cssomPrefixes=x;var E=C._config.usePrefixes?Q.toLowerCase().split(" "):[];C._domPrefixes=E;var T={elem:l("modernizr")};Modernizr._q.push(function(){delete T.elem});var U={style:T.elem.style};Modernizr._q.unshift(function(){delete U.style}),C.testAllProps=v,C.testAllProps=y,Modernizr.addTest("overflowscrolling",y("overflowScrolling","touch",!0)),o(),i(w),delete C.addTest,delete C.addAsyncTest;for(var P=0;P<Modernizr._q.length;P++)Modernizr._q[P]();e.Modernizr=Modernizr}(window,document);/*! @formatter:on */</script>
+
+</head>
+
+<body>
+	<div class="page-wrapper">
+		<!--Header-->
+		<header id="header" class="header">
+			<div class="header-top">
+				<div class="container">
+					<div class="header-top__wrap">
+						<nav class="header__menu">
+							<ul class="nav">
+								<li class="nav__item">
+									<a href="index.html" class="nav__link">
+										<span>Услуги</span>
+									</a>
+								</li>
+								<li class="nav__item">
+									<a href="index.html" class="nav__link">
+										<span>Новости</span>
+									</a>
+								</li>
+								<li class="nav__item">
+									<a href="index.html" class="nav__link">
+										<span>О компании</span>
+									</a>
+								</li>
+								<li class="nav__item">
+									<a href="index.html" class="nav__link">
+										<span>Проекты</span>
+									</a>
+								</li>
+								<li class="nav__item">
+									<a href="index.html" class="nav__link">
+										<span>Контакты</span>
+									</a>
+								</li>
+							</ul>
+
+						</nav>
+						<div class="header-contacts">
+							<a href="tel:+78435582230" class="header-tel">+7 (843) 558-22-30</a>
+							<button type="button" class="header-feedback">Обратный звонок</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="header-bottom">
+				<div class="container">
+					<div class="header-bottom__wrap">
+						<a href="index.html" class="header-logo">
+							<img src="images/icon/logo.svg" alt="Акметрон" width="162" height="48">
+						</a>
+						<button class="b-btn b-btn--secondary">
+							<span class="b-btn__icon">
+								<img src="images/icon/setting.svg" alt="" width="20" height="20">
+							</span>
+							<span>Конструктор</span>
+						</button>
+						<div class="header-catalog">
+							<button class="b-btn b-btn--primary">
+								<span class="b-btn__icon">
+									<img src="images/icon/application.svg" alt="" width="20" height="20">
+								</span>
+								<span>Каталог</span>
+							</button>
+							<div class="header-search">
+								<form action="#" class="header-search__form">
+									<input type="text" placeholder="Что вы ищите?">
+									<button type="button" class="b-btn b-btn--primary">
+										<span class="b-btn__icon">
+											<img src="images/icon/zoom.svg" alt="" width="16" height="16">
+										</span>
+									</button>
+								</form>
+							</div>
+						</div>
+						<div class="header-cart">
+							<button class="cart-btn">
+								<span class="cart-btn__icon">
+									<img src="images/icon/shopping.svg" alt="" width="24" height="24">
+								</span>
+								<span class="cart-btn__text">
+									Корзина
+								</span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<div class="main">
+
+			<div class="breadcrumbs">
+				<div class="container">
+					<ul class="breadcrumbs__list">
+						<li class="breadcrumbs__item">
+							<a href="#" class="breadcrumbs__link">
+								<img src="images/icon/home.svg" alt="" width="20" height="20">
+							</a>
+						</li>
+						<li class="breadcrumbs__item">
+							<a href="#" class="breadcrumbs__link">
+								Каталог
+							</a>
+						</li>
+						<li class="breadcrumbs__item">
+							<a href="#" class="breadcrumbs__link">
+								Каталог
+							</a>
+						</li>
+						<li class="breadcrumbs__item">
+							<a href="#" class="breadcrumbs__link">
+								Каталог
+							</a>
+						</li>
+						<li class="breadcrumbs__item">
+							<a href="#" class="breadcrumbs__link">
+								Каталог
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<section class="home-about">
+				<div class="container">
+					<div class="home-about__grid">
+						<div class="home-about__main">
+							<div class="home-about__wraap">
+								<h2 class="home-about__title section-title">
+									О компании
+								</h2>
+								<div class="home-about__text">
+									<p>
+										Мы беремся за сложные измерительные задачи и решаем их для ведущих предприятий РФ:
+									</p>
+								</div>
+								<ul class="home-about__list">
+									<li>
+										авиационно-космической и энергетической отраслей,
+									</li>
+									<li>
+										ОПК, научно-исследовательских институтов,
+									</li>
+									<li>
+										коммерческих предприятий, занятых в сфере фундаментальных исследований и образования,
+										квантовых вычислений, разработки и производстве электроники.
+									</li>
+								</ul>
+							</div>
+							<div class="home-about__wrapper home-about__wrapper--page">
+								<div class="home-about__wrap">
+									<div class="home-about__counts">
+										<div>
+											2012
+										</div>
+										<div>
+											Год основания
+											компании
+										</div>
+									</div>
+									<div class="home-about__counts">
+										<div>
+											>50
+										</div>
+										<div>
+											Количество
+											сотрудников
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="home-about__slider" data-slider="about-slider">
+							<div class="swiper swiper--about">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<picture>
+											<source srcset="images/home/about/about.webp 1x, images/home/about/about@2x.webp 1.3x" type="image/webp">
+											<source srcset="images/home/about/about.jpg 1x, images/home/about/about@2x.jpg 1.3x" type="image/jpg">
+											<img src="images/home/about/about.jpg" width="600" height="318" alt="">
+										</picture>
+									</div>
+									<div class="swiper-slide">
+										<picture>
+											<source srcset="images/home/about/about.webp 1x, images/home/about/about@2x.webp 1.3x" type="image/webp">
+											<source srcset="images/home/about/about.jpg 1x, images/home/about/about@2x.jpg 1.3x" type="image/jpg">
+											<img src="images/home/about/about.jpg" width="600" height="318" alt="">
+										</picture>
+									</div>
+									<div class="swiper-slide">
+										<picture>
+											<source srcset="images/home/about/about.webp 1x, images/home/about/about@2x.webp 1.3x" type="image/webp">
+											<source srcset="images/home/about/about.jpg 1x, images/home/about/about@2x.jpg 1.3x" type="image/jpg">
+											<img src="images/home/about/about.jpg" width="600" height="318" alt="">
+										</picture>
+									</div>
+									<div class="swiper-slide">
+										<picture>
+											<source srcset="images/home/about/about.webp 1x, images/home/about/about@2x.webp 1.3x" type="image/webp">
+											<source srcset="images/home/about/about.jpg 1x, images/home/about/about@2x.jpg 1.3x" type="image/jpg">
+											<img src="images/home/about/about.jpg" width="600" height="318" alt="">
+										</picture>
+									</div>
+									<div class="swiper-slide">
+										<picture>
+											<source srcset="images/home/about/about.webp 1x, images/home/about/about@2x.webp 1.3x" type="image/webp">
+											<source srcset="images/home/about/about.jpg 1x, images/home/about/about@2x.jpg 1.3x" type="image/jpg">
+											<img src="images/home/about/about.jpg" width="600" height="318" alt="">
+										</picture>
+									</div>
+								</div>
+								<div class="swiper-pagination"></div>
+								<div class="about-slider-prev swiper-button swiper-button--prev">
+									<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<circle cx="20" cy="20" r="20" fill="#F7F9FB" />
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M22.5249 14.5581C22.2809 14.314 21.8851 14.314 21.6411 14.5581L16.6411 19.5581C16.397 19.8021 16.397 20.1979 16.6411 20.4419L21.6411 25.4419C21.8851 25.686 22.2809 25.686 22.5249 25.4419C22.769 25.1979 22.769 24.8021 22.5249 24.5581L17.9669 20L22.5249 15.4419C22.769 15.1979 22.769 14.8021 22.5249 14.5581Z" fill="#131313" />
+									</svg>
+								</div>
+								<div class="about-slider-next swiper-button swiper-button--next">
+									<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<circle cx="20" cy="20" r="20" transform="matrix(-1 0 0 1 40 0)" fill="#F7F9FB" />
+										<rect width="20" height="20" transform="translate(10 10)" fill="#F7F9FB" />
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M17.4751 14.5581C17.7191 14.314 18.1149 14.314 18.3589 14.5581L23.3589 19.5581C23.603 19.8021 23.603 20.1979 23.3589 20.4419L18.3589 25.4419C18.1149 25.686 17.7191 25.686 17.4751 25.4419C17.231 25.1979 17.231 24.8021 17.4751 24.5581L22.0331 20L17.4751 15.4419C17.231 15.1979 17.231 14.8021 17.4751 14.5581Z" fill="#131313" />
+									</svg>
+								</div>
+							</div>
+						</div>
+						<div class="home-about__item home-about__item--yellow">
+							<div class="home-about__icon icon icon--yellow">
+								<img src="images/icon/shield.svg" alt="" width="19" height="19">
+							</div>
+							<div class="home-about__text">
+								Комплексный подход в поставках
+							</div>
+						</div>
+						<div class="home-about__item home-about__item--orange">
+							<div class="home-about__icon icon icon--orange">
+								<img src="images/icon/building.svg" alt="" width="19" height="19">
+							</div>
+							<div class="home-about__text">
+								Технологичное производство
+							</div>
+						</div>
+						<div class="home-about__item home-about__item--purple">
+							<div class="home-about__icon icon icon--purple">
+								<img src="images/icon/peoples-two.svg" alt="" width="19" height="19">
+							</div>
+							<div class="home-about__text">
+								Беремся за самые сложные задачи
+							</div>
+						</div>
+						<div class="home-about__item home-about__item--green">
+							<div class="home-about__icon icon icon--green">
+								<img src="images/icon/star.svg" alt="" width="19" height="19">
+							</div>
+							<div class="home-about__text">
+								Качественный сервис
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="requisites">
+				<div class="container">
+					<h2 class="requisites__title section-title">
+						Реквизиты
+					</h2>
+					<div class="requisites__grid">
+						<div class="box box--info">
+							<div class="box__head">
+								<div class="box__icon icon icon--blue">
+									<img src="images/icon/copy-one.svg" alt="" width="19" height="19">
+								</div>
+								<div class="box__name">
+									АО «Акметрон»
+								</div>
+							</div>
+							<ul class="box__list">
+								<li>
+									<div>
+										ОГРН:
+									</div>
+									<div>
+										1127746079120
+									</div>
+								</li>
+								<li>
+									<div>
+										ИНН:
+									</div>
+									<div>
+										7723827170
+									</div>
+								</li>
+								<li>
+									<div>
+										КПП:
+									</div>
+									<div>
+										772301001
+									</div>
+								</li>
+								<li>
+									<div>
+										Юридический адрес:
+									</div>
+									<div>
+										115088, Москва, ул. Южнопортовая, дом 5, строение 15, офис 2Б
+									</div>
+								</li>
+								<li>
+									<div>
+										Почтовый адрес:
+									</div>
+									<div>
+										109544, Москва, ул. Рабочая, д. 93, стр. 2
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="box box--requisites">
+							<div class="box__head">
+								<div class="box__icon icon icon--blue">
+									<img src="images/icon/bank-card.svg" alt="" width="19" height="19">
+								</div>
+								<div class="box__name">
+									Банковские реквизиты
+								</div>
+							</div>
+							<ul class="box__list">
+								<li>
+									<div>
+										Р/с:
+									</div>
+									<div>
+										40702810500001470714
+									</div>
+								</li>
+								<li>
+									<div>
+										К/с:
+									</div>
+									<div>
+										30101810200000000700
+									</div>
+								</li>
+								<li>
+									<div>
+										Банк:
+									</div>
+									<div>
+										АО «Райффайзенбанк», г. Москва
+									</div>
+								</li>
+								<li>
+									<div>
+										БИК:
+									</div>
+									<div>
+										044525700
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="box box--director">
+							<div class="box__icon icon icon--blue">
+								<img src="images/icon/user-business.svg" alt="" width="19" height="19">
+							</div>
+							<div class="box__wrap">
+								<div class="box__name">
+									Банковские реквизиты
+								</div>
+								<div class="box__text">
+									<p>
+										Генеральный директор, действующий на основании Устава
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="box box--contacts">
+							<div class="box__head">
+								<div class="box__icon icon icon--blue">
+									<img src="images/icon/local-two.svg" alt="" width="19" height="19">
+								</div>
+								<div class="box__name">
+									Банковские реквизиты
+								</div>
+							</div>
+							<div class="box__wrapper">
+								<div class="tabs-buttons">
+									<button class="tabs-btn active" data-tab="#tab_1">Москва</button>
+									<button class="tabs-btn" data-tab="#tab_2">Санкт-Петербург</button>
+									<button class="tabs-btn" data-tab="#tab_3">Казань</button>
+								</div>
+								<div class="tabs-item active" id="tab_1">
+									<ul class="box__list">
+										<li>
+											<div>
+												Адрес главного офиса:
+											</div>
+											<div>
+												109544, Москва, м. Римская /
+												пл. Ильича, ул. Рабочая, д. 93, стр.2
+											</div>
+										</li>
+										<li>
+											<div>
+												Телефон отдела продаж:
+											</div>
+											<div>
+												+7 (499) 521-28-34
+											</div>
+										</li>
+										<li>
+											<div>
+												Email:
+											</div>
+											<div>
+												info-site@akmetron.ru
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="tabs-item" id="tab_2">
+									<ul class="box__list">
+										<li>
+											<div>
+												Телефон отдела продаж:
+											</div>
+											<div>
+												+7 (812) 407-27-10
+											</div>
+										</li>
+										<li>
+											<div>
+												Email:
+											</div>
+											<div>
+												led@akmetron.ru
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="tabs-item" id="tab_3">
+									<ul class="box__list">
+										<li>
+											<div>
+												Телефон отдела продаж:
+											</div>
+											<div>
+												+7 (843) 558-22-30
+											</div>
+										</li>
+										<li>
+											<div>
+												Email:
+											</div>
+											<div>
+												kzn@akmetron.ru
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="map">
+							<img src="images/about/map.jpg" alt="">
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="feedback">
+				<div class="container">
+					<div class="feedback__wrap">
+						<div class="feedback__left">
+							<div class="feedback__top">
+								<h2 class="feedback__title section-title">
+									Остались вопросы?
+								</h2>
+								<div class="feedback__text">
+									<p>
+										Сообщите нам, что вас интересует, и мы обязательно ответим
+									</p>
+								</div>
+							</div>
+							<div class="feedback__form">
+								<form action="#" class="form form--feedback" id="feedback">
+									<div class="form__row">
+										<div class="form__wrap">
+											<label for="" class="form__label">
+												<input type="text" class="form__input" placeholder="Имя">
+											</label>
+										</div>
+										<div class="form__wrap">
+											<label for="" class="form__label">
+												<input type="text" class="form__input" placeholder="Телефон">
+											</label>
+										</div>
+									</div>
+									<div class="form__wrapper">
+										<textarea name="" id="" cols="30" rows="10" class="form__area" placeholder="Пожалуйста, опишите подробно ваше обращение."></textarea>
+									</div>
+									<div class="form__bottom">
+										<button type="button" class="b-btn b-btn--primary">Отправить</button>
+										<span>
+											Нажимая «Отправить», я даю свое согласие на обработку персональных данных
+										</span>
+									</div>
+								</form>
+							</div>
+						</div>
+						<div class="feedback__right">
+							<picture>
+								<source srcset="images/home/feedback/questions.webp 1x, images/home/category/category-1@2x.webp 1.3x" type="image/webp">
+								<source srcset="images/home/feedback/questions.png 1x, images/home/feedback/questions@2x.png 1.3x" type="image/png">
+								<img src="images/home/feedback/questions.png" width="550" height="504" alt="">
+							</picture>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="certificates">
+				<div class="container">
+					<h2 class="certificates__title section-title">
+						Сертификаты
+					</h2>
+					<div class="certificates__wrap">
+						<a href="#" class="certificates-item" download>
+							<div class="certificates-item__icon icon icon--blue">
+								<img src="images/icon/download.svg" alt="" width="19" height="19">
+							</div>
+							<div class="certificates-item__wrap">
+								<div class="certificates-item__name">
+									Авторизованный партнер Keysight
+								</div>
+								<div class="certificates-item__size">
+									25 кб
+								</div>
+							</div>
+						</a>
+						<a href="#" class="certificates-item" download>
+							<div class="certificates-item__icon icon icon--blue">
+								<img src="images/icon/download.svg" alt="" width="19" height="19">
+							</div>
+							<div class="certificates-item__wrap">
+								<div class="certificates-item__name">
+									Авторизованный партнер VPIphotonics
+								</div>
+								<div class="certificates-item__size">
+									25 кб
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</section>
+
+
+		</div>
+		<!-- Footer -->
+		<footer class="footer" id="footer">
+			<div class="container">
+				<div class="footer__top">
+					<nav class="footer__menu">
+						<div class="footer__item">
+							<button type="button" class="footer__head">
+								<span>
+									Верстаки
+								</span>
+								<img src="images/icon/down.svg" alt="" width="20" height="20">
+							</button>
+							<ul class="menu-item">
+								<li>
+									<a href="#">
+										Подкатегория
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Подкатегория
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Подкатегория
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Подкатегория
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Подкатегория
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="footer__item">
+							<button type="button" class="footer__head">
+								<span>
+									Оборудование
+								</span>
+								<img src="images/icon/down.svg" alt="" width="20" height="20">
+							</button>
+							<ul class="menu-item">
+								<li>
+									<a href="#">
+										Подкатегория
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Подкатегория
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Подкатегория
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Подкатегория
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Подкатегория
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="footer__item">
+							<button type="button" class="footer__head">
+								<span>
+									Аксессуары
+								</span>
+								<img src="images/icon/down.svg" alt="" width="20" height="20">
+							</button>
+							<ul class="menu-item">
+								<li>
+									<a href="#">
+										Подкатегория
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Подкатегория
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Подкатегория
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Подкатегория
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Подкатегория
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="footer__item">
+							<button type="button" class="footer__head">
+								<span>
+									Антистатическая и промышленная мебель
+								</span>
+								<img src="images/icon/down.svg" alt="" width="20" height="20">
+							</button>
+							<ul class="menu-item">
+								<li>
+									<a href="#">
+										Подкатегория
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Подкатегория
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Подкатегория
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Подкатегория
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Подкатегория
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="footer__item">
+							<button type="button" class="footer__head">
+								<span>
+									Лабораторная мебель
+								</span>
+								<img src="images/icon/down.svg" alt="" width="20" height="20">
+							</button>
+							<ul class="menu-item">
+								<li>
+									<a href="#">
+										Подкатегория
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Подкатегория
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Подкатегория
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Подкатегория
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Подкатегория
+									</a>
+								</li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+				<div class="footer__middle">
+					<div class="footer__contacts">
+						<span>Контакты</span>
+						<div class="footer__wrap">
+							<a href="tel:+78435582230">+7 (843) 558-22-30</a>
+							<a href="mailto:info@akmetron.ru">info@akmetron.ru</a>
+						</div>
+					</div>
+					<ul class="footer__nav">
+						<li>
+							<a href="#">
+								Услуги
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Новости
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								О компании
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Контакты
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__bottom">
+					<a href="#">© 2023 Акметрон</a>
+					<a href="#">Политика конфиденциальности</a>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+	<script src="js/app.min.js"></script>
+
+	<script src="js/slider.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,996 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Акметрон - каталог</title>
+	<link rel="stylesheet" href="css/app.css">
+	<script>/*! @formatter:off modernizr 3.6.0 (Custom Build) | MIT https://modernizr.com/download/?-overflowscrolling-webp-setclasses !*/!function(e,n,t){function r(e,n){return typeof e===n}function o(){var e,n,t,o,i,s,a;for(var l in _)if(_.hasOwnProperty(l)){if(e=[],n=_[l],n.name&&(e.push(n.name.toLowerCase()),n.options&&n.options.aliases&&n.options.aliases.length))for(t=0;t<n.options.aliases.length;t++)e.push(n.options.aliases[t].toLowerCase());for(o=r(n.fn,"function")?n.fn():n.fn,i=0;i<e.length;i++)s=e[i],a=s.split("."),1===a.length?Modernizr[a[0]]=o:(!Modernizr[a[0]]||Modernizr[a[0]]instanceof Boolean||(Modernizr[a[0]]=new Boolean(Modernizr[a[0]])),Modernizr[a[0]][a[1]]=o),w.push((o?"":"no-")+a.join("-"))}}function i(e){var n=S.className,t=Modernizr._config.classPrefix||"";if(B&&(n=n.baseVal),Modernizr._config.enableJSClass){var r=new RegExp("(^|\\s)"+t+"no-js(\\s|$)");n=n.replace(r,"$1"+t+"js$2")}Modernizr._config.enableClasses&&(n+=" "+t+e.join(" "+t),B?S.className.baseVal=n:S.className=n)}function s(e,n){if("object"==typeof e)for(var t in e)b(e,t)&&s(t,e[t]);else{e=e.toLowerCase();var r=e.split("."),o=Modernizr[r[0]];if(2==r.length&&(o=o[r[1]]),"undefined"!=typeof o)return Modernizr;n="function"==typeof n?n():n,1==r.length?Modernizr[r[0]]=n:(!Modernizr[r[0]]||Modernizr[r[0]]instanceof Boolean||(Modernizr[r[0]]=new Boolean(Modernizr[r[0]])),Modernizr[r[0]][r[1]]=n),i([(n&&0!=n?"":"no-")+r.join("-")]),Modernizr._trigger(e,n)}return Modernizr}function a(e,n){return!!~(""+e).indexOf(n)}function l(){return"function"!=typeof n.createElement?n.createElement(arguments[0]):B?n.createElementNS.call(n,"http://www.w3.org/2000/svg",arguments[0]):n.createElement.apply(n,arguments)}function A(e){return e.replace(/([a-z])-([a-z])/g,function(e,n,t){return n+t.toUpperCase()}).replace(/^-/,"")}function u(e,n){return function(){return e.apply(n,arguments)}}function f(e,n,t){var o;for(var i in e)if(e[i]in n)return t===!1?e[i]:(o=n[e[i]],r(o,"function")?u(o,t||n):o);return!1}function c(n,t,r){var o;if("getComputedStyle"in e){o=getComputedStyle.call(e,n,t);var i=e.console;if(null!==o)r&&(o=o.getPropertyValue(r));else if(i){var s=i.error?"error":"log";i[s].call(i,"getComputedStyle returning null, its possible modernizr test results are inaccurate")}}else o=!t&&n.currentStyle&&n.currentStyle[r];return o}function p(e){return e.replace(/([A-Z])/g,function(e,n){return"-"+n.toLowerCase()}).replace(/^ms-/,"-ms-")}function d(){var e=n.body;return e||(e=l(B?"svg":"body"),e.fake=!0),e}function m(e,t,r,o){var i,s,a,A,u="modernizr",f=l("div"),c=d();if(parseInt(r,10))for(;r--;)a=l("div"),a.id=o?o[r]:u+(r+1),f.appendChild(a);return i=l("style"),i.type="text/css",i.id="s"+u,(c.fake?c:f).appendChild(i),c.appendChild(f),i.styleSheet?i.styleSheet.cssText=e:i.appendChild(n.createTextNode(e)),f.id=u,c.fake&&(c.style.background="",c.style.overflow="hidden",A=S.style.overflow,S.style.overflow="hidden",S.appendChild(c)),s=t(f,e),c.fake?(c.parentNode.removeChild(c),S.style.overflow=A,S.offsetHeight):f.parentNode.removeChild(f),!!s}function g(n,r){var o=n.length;if("CSS"in e&&"supports"in e.CSS){for(;o--;)if(e.CSS.supports(p(n[o]),r))return!0;return!1}if("CSSSupportsRule"in e){for(var i=[];o--;)i.push("("+p(n[o])+":"+r+")");return i=i.join(" or "),m("@supports ("+i+") { #modernizr { position: absolute; } }",function(e){return"absolute"==c(e,null,"position")})}return t}function h(e,n,o,i){function s(){f&&(delete U.style,delete U.modElem)}if(i=r(i,"undefined")?!1:i,!r(o,"undefined")){var u=g(e,o);if(!r(u,"undefined"))return u}for(var f,c,p,d,m,h=["modernizr","tspan","samp"];!U.style&&h.length;)f=!0,U.modElem=l(h.shift()),U.style=U.modElem.style;for(p=e.length,c=0;p>c;c++)if(d=e[c],m=U.style[d],a(d,"-")&&(d=A(d)),U.style[d]!==t){if(i||r(o,"undefined"))return s(),"pfx"==n?d:!0;try{U.style[d]=o}catch(v){}if(U.style[d]!=m)return s(),"pfx"==n?d:!0}return s(),!1}function v(e,n,t,o,i){var s=e.charAt(0).toUpperCase()+e.slice(1),a=(e+" "+x.join(s+" ")+s).split(" ");return r(n,"string")||r(n,"undefined")?h(a,n,o,i):(a=(e+" "+E.join(s+" ")+s).split(" "),f(a,n,t))}function y(e,n,r){return v(e,t,t,n,r)}var w=[],_=[],C={_version:"3.6.0",_config:{classPrefix:"",enableClasses:!0,enableJSClass:!0,usePrefixes:!0},_q:[],on:function(e,n){var t=this;setTimeout(function(){n(t[e])},0)},addTest:function(e,n,t){_.push({name:e,fn:n,options:t})},addAsyncTest:function(e){_.push({name:null,fn:e})}},Modernizr=function(){};Modernizr.prototype=C,Modernizr=new Modernizr;var b,S=n.documentElement,B="svg"===S.nodeName.toLowerCase();!function(){var e={}.hasOwnProperty;b=r(e,"undefined")||r(e.call,"undefined")?function(e,n){return n in e&&r(e.constructor.prototype[n],"undefined")}:function(n,t){return e.call(n,t)}}(),C._l={},C.on=function(e,n){this._l[e]||(this._l[e]=[]),this._l[e].push(n),Modernizr.hasOwnProperty(e)&&setTimeout(function(){Modernizr._trigger(e,Modernizr[e])},0)},C._trigger=function(e,n){if(this._l[e]){var t=this._l[e];setTimeout(function(){var e,r;for(e=0;e<t.length;e++)(r=t[e])(n)},0),delete this._l[e]}},Modernizr._q.push(function(){C.addTest=s}),Modernizr.addAsyncTest(function(){function e(e,n,t){function r(n){var r=n&&"load"===n.type?1==o.width:!1,i="webp"===e;s(e,i&&r?new Boolean(r):r),t&&t(n)}var o=new Image;o.onerror=r,o.onload=r,o.src=n}var n=[{uri:"data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoBAAEAAwA0JaQAA3AA/vuUAAA=",name:"webp"},{uri:"data:image/webp;base64,UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAABBxAR/Q9ERP8DAABWUDggGAAAADABAJ0BKgEAAQADADQlpAADcAD++/1QAA==",name:"webp.alpha"},{uri:"data:image/webp;base64,UklGRlIAAABXRUJQVlA4WAoAAAASAAAAAAAAAAAAQU5JTQYAAAD/////AABBTk1GJgAAAAAAAAAAAAAAAAAAAGQAAABWUDhMDQAAAC8AAAAQBxAREYiI/gcA",name:"webp.animation"},{uri:"data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAAAAAAfQ//73v/+BiOh/AAA=",name:"webp.lossless"}],t=n.shift();e(t.name,t.uri,function(t){if(t&&"load"===t.type)for(var r=0;r<n.length;r++)e(n[r].name,n[r].uri)})});var Q="Moz O ms Webkit",x=C._config.usePrefixes?Q.split(" "):[];C._cssomPrefixes=x;var E=C._config.usePrefixes?Q.toLowerCase().split(" "):[];C._domPrefixes=E;var T={elem:l("modernizr")};Modernizr._q.push(function(){delete T.elem});var U={style:T.elem.style};Modernizr._q.unshift(function(){delete U.style}),C.testAllProps=v,C.testAllProps=y,Modernizr.addTest("overflowscrolling",y("overflowScrolling","touch",!0)),o(),i(w),delete C.addTest,delete C.addAsyncTest;for(var P=0;P<Modernizr._q.length;P++)Modernizr._q[P]();e.Modernizr=Modernizr}(window,document);/*! @formatter:on */</script>
+
+</head>
+
+<body>
+	<div class="page-wrapper">
+		<!--Header-->
+		<header id="header" class="header">
+			<div class="header-top">
+				<div class="container">
+					<div class="header-top__wrap">
+						<nav class="header__menu">
+							<ul class="nav">
+								<li class="nav__item">
+									<a href="index.html" class="nav__link">
+										<span>Услуги</span>
+									</a>
+								</li>
+								<li class="nav__item">
+									<a href="index.html" class="nav__link">
+										<span>Новости</span>
+									</a>
+								</li>
+								<li class="nav__item">
+									<a href="index.html" class="nav__link">
+										<span>О компании</span>
+									</a>
+								</li>
+								<li class="nav__item">
+									<a href="index.html" class="nav__link">
+										<span>Проекты</span>
+									</a>
+								</li>
+								<li class="nav__item">
+									<a href="index.html" class="nav__link">
+										<span>Контакты</span>
+									</a>
+								</li>
+							</ul>
+
+						</nav>
+						<div class="header-contacts">
+							<a href="tel:+78435582230" class="header-tel">+7 (843) 558-22-30</a>
+							<button type="button" class="header-feedback">Обратный звонок</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="header-bottom">
+				<div class="container">
+					<div class="header-bottom__wrap">
+						<a href="index.html" class="header-logo">
+							<img src="images/icon/logo.svg" alt="Акметрон" width="162" height="48">
+						</a>
+						<button class="b-btn b-btn--secondary">
+							<span class="b-btn__icon">
+								<img src="images/icon/setting.svg" alt="" width="20" height="20">
+							</span>
+							<span>Конструктор</span>
+						</button>
+						<div class="header-catalog">
+							<button class="b-btn b-btn--primary">
+								<span class="b-btn__icon">
+									<img src="images/icon/application.svg" alt="" width="20" height="20">
+								</span>
+								<span>Каталог</span>
+							</button>
+							<div class="header-search">
+								<form action="#" class="header-search__form">
+									<input type="text" placeholder="Что вы ищите?">
+									<button type="button" class="b-btn b-btn--primary">
+										<span class="b-btn__icon">
+											<img src="images/icon/zoom.svg" alt="" width="16" height="16">
+										</span>
+									</button>
+								</form>
+							</div>
+						</div>
+						<div class="header-cart">
+							<button class="cart-btn">
+								<span class="cart-btn__icon">
+									<img src="images/icon/shopping.svg" alt="" width="24" height="24">
+								</span>
+								<span class="cart-btn__text">
+									Корзина
+								</span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<div class="main">
+
+			<div class="breadcrumbs">
+				<div class="container">
+					<ul class="breadcrumbs__list">
+						<li class="breadcrumbs__item">
+							<a href="#" class="breadcrumbs__link">
+								<img src="images/icon/home.svg" alt="" width="20" height="20">
+							</a>
+						</li>
+						<li class="breadcrumbs__item">
+							<a href="#" class="breadcrumbs__link">
+								Каталог
+							</a>
+						</li>
+						<li class="breadcrumbs__item">
+							<a href="#" class="breadcrumbs__link">
+								Каталог
+							</a>
+						</li>
+						<li class="breadcrumbs__item">
+							<a href="#" class="breadcrumbs__link">
+								Каталог
+							</a>
+						</li>
+						<li class="breadcrumbs__item">
+							<a href="#" class="breadcrumbs__link">
+								Каталог
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="home-category" data-slider="home-category">
+				<div class="container">
+					<div class="swiper swiper--category">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<a href="#" class="category-item">
+									<picture class="category-item__image">
+										<source srcset="images/home/category/category-1.webp 1x, images/home/category/category-1@2x.webp 1.3x" type="image/webp">
+										<source srcset="images/home/category/category-1.jpg 1x, images/home/category/category-1@2x.jpg 1.3x" type="image/jpg">
+										<img src="images/home/category/category-1.jpg" width="225" height="232" alt="">
+									</picture>
+									<span class="category-item__name">
+										Антистатическая и промышленная мебель
+									</span>
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#" class="category-item">
+									<picture class="category-item__image">
+										<source srcset="images/home/category/category-2.webp 1x, images/home/category/category-2@2x.webp 1.3x" type="image/webp">
+										<source srcset="images/home/category/category-2.jpg 1x, images/home/category/category-2@2x.jpg 1.3x" type="image/jpg">
+										<img src="images/home/category/category-2.jpg" width="225" height="232" alt="">
+									</picture>
+									<span class="category-item__name">
+										Верстаки
+									</span>
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#" class="category-item">
+									<picture class="category-item__image">
+										<source srcset="images/home/category/category-3.webp 1x, images/home/category/category-3@2x.webp 1.3x" type="image/webp">
+										<source srcset="images/home/category/category-3.jpg 1x, images/home/category/category-3@2x.jpg 1.3x" type="image/jpg">
+										<img src="images/home/category/category-3.jpg" width="225" height="232" alt="">
+									</picture>
+									<span class="category-item__name">
+										Аксессуары
+									</span>
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#" class="category-item">
+									<picture class="category-item__image">
+										<source srcset="images/home/category/category-4.webp 1x, images/home/category/category-4@2x.webp 1.3x" type="image/webp">
+										<source srcset="images/home/category/category-4.jpg 1x, images/home/category/category-4@2x.jpg 1.3x" type="image/jpg">
+										<img src="images/home/category/category-4.jpg" width="225" height="232" alt="">
+									</picture>
+									<span class="category-item__name">
+										Лабораторная мебель
+									</span>
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#" class="category-item">
+									<picture class="category-item__image">
+										<source srcset="images/home/category/category-5.webp 1x, images/home/category/category-5@2x.webp 1.3x" type="image/webp">
+										<source srcset="images/home/category/category-5.jpg 1x, images/home/category/category-5@2x.jpg 1.3x" type="image/jpg">
+										<img src="images/home/category/category-5.jpg" width="225" height="232" alt="">
+									</picture>
+									<span class="category-item__name">
+										Оборудование
+									</span>
+								</a>
+							</div>
+						</div>
+						<div class="swiper-pagination"></div>
+					</div>
+				</div>
+			</div>
+
+			<section class="catalog">
+				<div class="container">
+					<h2 class="catalog__title section-title">
+						Рабочие места
+					</h2>
+					<div class="catalog__gird catalog__gird--goods">
+						<div class="goods-card">
+							<div class="good-card__img">
+								<div class="promotion">
+									Акция
+								</div>
+								<picture>
+									<source srcset="images/home/goods/goods-1.webp 1x, images/home/goods/goods-1@2x.webp 1.3x" type="image/webp">
+									<source srcset="images/home/goods/goods-1.png 1x, images/home/goods/goods-1@2x.png 1.3x" type="image/png">
+									<img src="images/home/goods/goods-1.png" width="268" height="250" alt="">
+								</picture>
+							</div>
+							<div class="goods-card__price">
+								<span class="price">
+									32 500 ₽
+								</span>
+								<span class="price-old">
+									48 000 ₽
+								</span>
+							</div>
+							<a href="" class="goods-card__name">
+								Рабочее место серии «BASE SET»
+							</a>
+							<div class="goods-card__availability goods-card__availability--yes">
+								В наличии
+							</div>
+							<button class="goods-card__btn b-btn b-btn--primary">
+								<span>В корзину</span>
+								<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M16.2499 13.3333V13.8542H16.6565L16.7552 13.4597L16.2499 13.3333ZM5.41654 13.3333L4.91126 13.4597L5.00989 13.8542H5.41654V13.3333ZM18.3332 5L18.8385 5.12632L19.0003 4.47917H18.3332V5ZM1.24988 2.5V1.97917C1.04779 1.97917 0.863935 2.09607 0.778217 2.27909C0.692498 2.4621 0.720386 2.67818 0.849763 2.83343L1.24988 2.5ZM2.70821 2.5L3.21349 2.37368C3.15553 2.14182 2.9472 1.97917 2.70821 1.97917V2.5ZM16.2499 12.8125H5.41654V13.8542H16.2499V12.8125ZM5.92183 13.207L3.83849 4.87368L2.82793 5.12632L4.91126 13.4597L5.92183 13.207ZM3.33321 5.52083H18.3332V4.47917H3.33321V5.52083ZM17.8279 4.87368L15.7446 13.207L16.7552 13.4597L18.8385 5.12632L17.8279 4.87368ZM1.24988 3.02083H2.70821V1.97917H1.24988V3.02083ZM2.20293 2.62632L2.82793 5.12632L3.83849 4.87368L3.21349 2.37368L2.20293 2.62632ZM3.73333 4.66657L1.64999 2.16657L0.849763 2.83343L2.9331 5.33343L3.73333 4.66657ZM6.14571 16.25C6.14571 16.6527 5.81925 16.9792 5.41654 16.9792V18.0208C6.39455 18.0208 7.18738 17.228 7.18738 16.25H6.14571ZM5.41654 16.9792C5.01384 16.9792 4.68738 16.6527 4.68738 16.25H3.64571C3.64571 17.228 4.43854 18.0208 5.41654 18.0208V16.9792ZM4.68738 16.25C4.68738 15.8473 5.01384 15.5208 5.41654 15.5208V14.4792C4.43854 14.4792 3.64571 15.272 3.64571 16.25H4.68738ZM5.41654 15.5208C5.81925 15.5208 6.14571 15.8473 6.14571 16.25H7.18738C7.18738 15.272 6.39455 14.4792 5.41654 14.4792V15.5208ZM16.979 16.25C16.979 16.6527 16.6526 16.9792 16.2499 16.9792V18.0208C17.2279 18.0208 18.0207 17.228 18.0207 16.25H16.979ZM16.2499 16.9792C15.8472 16.9792 15.5207 16.6527 15.5207 16.25H14.479C14.479 17.228 15.2719 18.0208 16.2499 18.0208V16.9792ZM15.5207 16.25C15.5207 15.8473 15.8472 15.5208 16.2499 15.5208V14.4792C15.2719 14.4792 14.479 15.272 14.479 16.25H15.5207ZM16.2499 15.5208C16.6526 15.5208 16.979 15.8473 16.979 16.25H18.0207C18.0207 15.272 17.2279 14.4792 16.2499 14.4792V15.5208Z" fill="white" />
+								</svg>
+							</button>
+						</div>
+						<div class="goods-card">
+							<div class="good-card__img">
+								<div class="promotion">
+									Акция
+								</div>
+								<picture>
+									<source srcset="images/home/goods/goods-1.webp 1x, images/home/goods/goods-1@2x.webp 1.3x" type="image/webp">
+									<source srcset="images/home/goods/goods-1.png 1x, images/home/goods/goods-1@2x.png 1.3x" type="image/png">
+									<img src="images/home/goods/goods-1.png" width="268" height="250" alt="">
+								</picture>
+							</div>
+							<div class="goods-card__price">
+								<span class="price">
+									32 500 ₽
+								</span>
+								<span class="price-old">
+									48 000 ₽
+								</span>
+							</div>
+							<a href="" class="goods-card__name">
+								Рабочее место серии «BASE SET»
+							</a>
+							<div class="goods-card__availability goods-card__availability--yes">
+								В наличии
+							</div>
+							<button class="goods-card__btn b-btn b-btn--primary">
+								<span>В корзину</span>
+								<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M16.2499 13.3333V13.8542H16.6565L16.7552 13.4597L16.2499 13.3333ZM5.41654 13.3333L4.91126 13.4597L5.00989 13.8542H5.41654V13.3333ZM18.3332 5L18.8385 5.12632L19.0003 4.47917H18.3332V5ZM1.24988 2.5V1.97917C1.04779 1.97917 0.863935 2.09607 0.778217 2.27909C0.692498 2.4621 0.720386 2.67818 0.849763 2.83343L1.24988 2.5ZM2.70821 2.5L3.21349 2.37368C3.15553 2.14182 2.9472 1.97917 2.70821 1.97917V2.5ZM16.2499 12.8125H5.41654V13.8542H16.2499V12.8125ZM5.92183 13.207L3.83849 4.87368L2.82793 5.12632L4.91126 13.4597L5.92183 13.207ZM3.33321 5.52083H18.3332V4.47917H3.33321V5.52083ZM17.8279 4.87368L15.7446 13.207L16.7552 13.4597L18.8385 5.12632L17.8279 4.87368ZM1.24988 3.02083H2.70821V1.97917H1.24988V3.02083ZM2.20293 2.62632L2.82793 5.12632L3.83849 4.87368L3.21349 2.37368L2.20293 2.62632ZM3.73333 4.66657L1.64999 2.16657L0.849763 2.83343L2.9331 5.33343L3.73333 4.66657ZM6.14571 16.25C6.14571 16.6527 5.81925 16.9792 5.41654 16.9792V18.0208C6.39455 18.0208 7.18738 17.228 7.18738 16.25H6.14571ZM5.41654 16.9792C5.01384 16.9792 4.68738 16.6527 4.68738 16.25H3.64571C3.64571 17.228 4.43854 18.0208 5.41654 18.0208V16.9792ZM4.68738 16.25C4.68738 15.8473 5.01384 15.5208 5.41654 15.5208V14.4792C4.43854 14.4792 3.64571 15.272 3.64571 16.25H4.68738ZM5.41654 15.5208C5.81925 15.5208 6.14571 15.8473 6.14571 16.25H7.18738C7.18738 15.272 6.39455 14.4792 5.41654 14.4792V15.5208ZM16.979 16.25C16.979 16.6527 16.6526 16.9792 16.2499 16.9792V18.0208C17.2279 18.0208 18.0207 17.228 18.0207 16.25H16.979ZM16.2499 16.9792C15.8472 16.9792 15.5207 16.6527 15.5207 16.25H14.479C14.479 17.228 15.2719 18.0208 16.2499 18.0208V16.9792ZM15.5207 16.25C15.5207 15.8473 15.8472 15.5208 16.2499 15.5208V14.4792C15.2719 14.4792 14.479 15.272 14.479 16.25H15.5207ZM16.2499 15.5208C16.6526 15.5208 16.979 15.8473 16.979 16.25H18.0207C18.0207 15.272 17.2279 14.4792 16.2499 14.4792V15.5208Z" fill="white" />
+								</svg>
+							</button>
+						</div>
+						<div class="goods-card">
+							<div class="good-card__img">
+								<div class="promotion">
+									Акция
+								</div>
+								<picture>
+									<source srcset="images/home/goods/goods-1.webp 1x, images/home/goods/goods-1@2x.webp 1.3x" type="image/webp">
+									<source srcset="images/home/goods/goods-1.png 1x, images/home/goods/goods-1@2x.png 1.3x" type="image/png">
+									<img src="images/home/goods/goods-1.png" width="268" height="250" alt="">
+								</picture>
+							</div>
+							<div class="goods-card__price">
+								<span class="price">
+									32 500 ₽
+								</span>
+								<span class="price-old">
+									48 000 ₽
+								</span>
+							</div>
+							<a href="" class="goods-card__name">
+								Рабочее место серии «BASE SET»
+							</a>
+							<div class="goods-card__availability goods-card__availability--yes">
+								В наличии
+							</div>
+							<button class="goods-card__btn b-btn b-btn--primary">
+								<span>В корзину</span>
+								<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M16.2499 13.3333V13.8542H16.6565L16.7552 13.4597L16.2499 13.3333ZM5.41654 13.3333L4.91126 13.4597L5.00989 13.8542H5.41654V13.3333ZM18.3332 5L18.8385 5.12632L19.0003 4.47917H18.3332V5ZM1.24988 2.5V1.97917C1.04779 1.97917 0.863935 2.09607 0.778217 2.27909C0.692498 2.4621 0.720386 2.67818 0.849763 2.83343L1.24988 2.5ZM2.70821 2.5L3.21349 2.37368C3.15553 2.14182 2.9472 1.97917 2.70821 1.97917V2.5ZM16.2499 12.8125H5.41654V13.8542H16.2499V12.8125ZM5.92183 13.207L3.83849 4.87368L2.82793 5.12632L4.91126 13.4597L5.92183 13.207ZM3.33321 5.52083H18.3332V4.47917H3.33321V5.52083ZM17.8279 4.87368L15.7446 13.207L16.7552 13.4597L18.8385 5.12632L17.8279 4.87368ZM1.24988 3.02083H2.70821V1.97917H1.24988V3.02083ZM2.20293 2.62632L2.82793 5.12632L3.83849 4.87368L3.21349 2.37368L2.20293 2.62632ZM3.73333 4.66657L1.64999 2.16657L0.849763 2.83343L2.9331 5.33343L3.73333 4.66657ZM6.14571 16.25C6.14571 16.6527 5.81925 16.9792 5.41654 16.9792V18.0208C6.39455 18.0208 7.18738 17.228 7.18738 16.25H6.14571ZM5.41654 16.9792C5.01384 16.9792 4.68738 16.6527 4.68738 16.25H3.64571C3.64571 17.228 4.43854 18.0208 5.41654 18.0208V16.9792ZM4.68738 16.25C4.68738 15.8473 5.01384 15.5208 5.41654 15.5208V14.4792C4.43854 14.4792 3.64571 15.272 3.64571 16.25H4.68738ZM5.41654 15.5208C5.81925 15.5208 6.14571 15.8473 6.14571 16.25H7.18738C7.18738 15.272 6.39455 14.4792 5.41654 14.4792V15.5208ZM16.979 16.25C16.979 16.6527 16.6526 16.9792 16.2499 16.9792V18.0208C17.2279 18.0208 18.0207 17.228 18.0207 16.25H16.979ZM16.2499 16.9792C15.8472 16.9792 15.5207 16.6527 15.5207 16.25H14.479C14.479 17.228 15.2719 18.0208 16.2499 18.0208V16.9792ZM15.5207 16.25C15.5207 15.8473 15.8472 15.5208 16.2499 15.5208V14.4792C15.2719 14.4792 14.479 15.272 14.479 16.25H15.5207ZM16.2499 15.5208C16.6526 15.5208 16.979 15.8473 16.979 16.25H18.0207C18.0207 15.272 17.2279 14.4792 16.2499 14.4792V15.5208Z" fill="white" />
+								</svg>
+							</button>
+						</div>
+						<div class="goods-card">
+							<div class="good-card__img">
+								<div class="promotion">
+									Акция
+								</div>
+								<picture>
+									<source srcset="images/home/goods/goods-1.webp 1x, images/home/goods/goods-1@2x.webp 1.3x" type="image/webp">
+									<source srcset="images/home/goods/goods-1.png 1x, images/home/goods/goods-1@2x.png 1.3x" type="image/png">
+									<img src="images/home/goods/goods-1.png" width="268" height="250" alt="">
+								</picture>
+							</div>
+							<div class="goods-card__price">
+								<span class="price">
+									32 500 ₽
+								</span>
+								<span class="price-old">
+									48 000 ₽
+								</span>
+							</div>
+							<a href="" class="goods-card__name">
+								Рабочее место серии «BASE SET»
+							</a>
+							<div class="goods-card__availability goods-card__availability--yes">
+								В наличии
+							</div>
+							<button class="goods-card__btn b-btn b-btn--primary">
+								<span>В корзину</span>
+								<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M16.2499 13.3333V13.8542H16.6565L16.7552 13.4597L16.2499 13.3333ZM5.41654 13.3333L4.91126 13.4597L5.00989 13.8542H5.41654V13.3333ZM18.3332 5L18.8385 5.12632L19.0003 4.47917H18.3332V5ZM1.24988 2.5V1.97917C1.04779 1.97917 0.863935 2.09607 0.778217 2.27909C0.692498 2.4621 0.720386 2.67818 0.849763 2.83343L1.24988 2.5ZM2.70821 2.5L3.21349 2.37368C3.15553 2.14182 2.9472 1.97917 2.70821 1.97917V2.5ZM16.2499 12.8125H5.41654V13.8542H16.2499V12.8125ZM5.92183 13.207L3.83849 4.87368L2.82793 5.12632L4.91126 13.4597L5.92183 13.207ZM3.33321 5.52083H18.3332V4.47917H3.33321V5.52083ZM17.8279 4.87368L15.7446 13.207L16.7552 13.4597L18.8385 5.12632L17.8279 4.87368ZM1.24988 3.02083H2.70821V1.97917H1.24988V3.02083ZM2.20293 2.62632L2.82793 5.12632L3.83849 4.87368L3.21349 2.37368L2.20293 2.62632ZM3.73333 4.66657L1.64999 2.16657L0.849763 2.83343L2.9331 5.33343L3.73333 4.66657ZM6.14571 16.25C6.14571 16.6527 5.81925 16.9792 5.41654 16.9792V18.0208C6.39455 18.0208 7.18738 17.228 7.18738 16.25H6.14571ZM5.41654 16.9792C5.01384 16.9792 4.68738 16.6527 4.68738 16.25H3.64571C3.64571 17.228 4.43854 18.0208 5.41654 18.0208V16.9792ZM4.68738 16.25C4.68738 15.8473 5.01384 15.5208 5.41654 15.5208V14.4792C4.43854 14.4792 3.64571 15.272 3.64571 16.25H4.68738ZM5.41654 15.5208C5.81925 15.5208 6.14571 15.8473 6.14571 16.25H7.18738C7.18738 15.272 6.39455 14.4792 5.41654 14.4792V15.5208ZM16.979 16.25C16.979 16.6527 16.6526 16.9792 16.2499 16.9792V18.0208C17.2279 18.0208 18.0207 17.228 18.0207 16.25H16.979ZM16.2499 16.9792C15.8472 16.9792 15.5207 16.6527 15.5207 16.25H14.479C14.479 17.228 15.2719 18.0208 16.2499 18.0208V16.9792ZM15.5207 16.25C15.5207 15.8473 15.8472 15.5208 16.2499 15.5208V14.4792C15.2719 14.4792 14.479 15.272 14.479 16.25H15.5207ZM16.2499 15.5208C16.6526 15.5208 16.979 15.8473 16.979 16.25H18.0207C18.0207 15.272 17.2279 14.4792 16.2499 14.4792V15.5208Z" fill="white" />
+								</svg>
+							</button>
+						</div>
+						<div class="goods-card">
+							<div class="good-card__img">
+								<div class="promotion">
+									Акция
+								</div>
+								<picture>
+									<source srcset="images/home/goods/goods-1.webp 1x, images/home/goods/goods-1@2x.webp 1.3x" type="image/webp">
+									<source srcset="images/home/goods/goods-1.png 1x, images/home/goods/goods-1@2x.png 1.3x" type="image/png">
+									<img src="images/home/goods/goods-1.png" width="268" height="250" alt="">
+								</picture>
+							</div>
+							<div class="goods-card__price">
+								<span class="price">
+									32 500 ₽
+								</span>
+								<span class="price-old">
+									48 000 ₽
+								</span>
+							</div>
+							<a href="" class="goods-card__name">
+								Рабочее место серии «BASE SET»
+							</a>
+							<div class="goods-card__availability goods-card__availability--yes">
+								В наличии
+							</div>
+							<button class="goods-card__btn b-btn b-btn--primary">
+								<span>В корзину</span>
+								<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M16.2499 13.3333V13.8542H16.6565L16.7552 13.4597L16.2499 13.3333ZM5.41654 13.3333L4.91126 13.4597L5.00989 13.8542H5.41654V13.3333ZM18.3332 5L18.8385 5.12632L19.0003 4.47917H18.3332V5ZM1.24988 2.5V1.97917C1.04779 1.97917 0.863935 2.09607 0.778217 2.27909C0.692498 2.4621 0.720386 2.67818 0.849763 2.83343L1.24988 2.5ZM2.70821 2.5L3.21349 2.37368C3.15553 2.14182 2.9472 1.97917 2.70821 1.97917V2.5ZM16.2499 12.8125H5.41654V13.8542H16.2499V12.8125ZM5.92183 13.207L3.83849 4.87368L2.82793 5.12632L4.91126 13.4597L5.92183 13.207ZM3.33321 5.52083H18.3332V4.47917H3.33321V5.52083ZM17.8279 4.87368L15.7446 13.207L16.7552 13.4597L18.8385 5.12632L17.8279 4.87368ZM1.24988 3.02083H2.70821V1.97917H1.24988V3.02083ZM2.20293 2.62632L2.82793 5.12632L3.83849 4.87368L3.21349 2.37368L2.20293 2.62632ZM3.73333 4.66657L1.64999 2.16657L0.849763 2.83343L2.9331 5.33343L3.73333 4.66657ZM6.14571 16.25C6.14571 16.6527 5.81925 16.9792 5.41654 16.9792V18.0208C6.39455 18.0208 7.18738 17.228 7.18738 16.25H6.14571ZM5.41654 16.9792C5.01384 16.9792 4.68738 16.6527 4.68738 16.25H3.64571C3.64571 17.228 4.43854 18.0208 5.41654 18.0208V16.9792ZM4.68738 16.25C4.68738 15.8473 5.01384 15.5208 5.41654 15.5208V14.4792C4.43854 14.4792 3.64571 15.272 3.64571 16.25H4.68738ZM5.41654 15.5208C5.81925 15.5208 6.14571 15.8473 6.14571 16.25H7.18738C7.18738 15.272 6.39455 14.4792 5.41654 14.4792V15.5208ZM16.979 16.25C16.979 16.6527 16.6526 16.9792 16.2499 16.9792V18.0208C17.2279 18.0208 18.0207 17.228 18.0207 16.25H16.979ZM16.2499 16.9792C15.8472 16.9792 15.5207 16.6527 15.5207 16.25H14.479C14.479 17.228 15.2719 18.0208 16.2499 18.0208V16.9792ZM15.5207 16.25C15.5207 15.8473 15.8472 15.5208 16.2499 15.5208V14.4792C15.2719 14.4792 14.479 15.272 14.479 16.25H15.5207ZM16.2499 15.5208C16.6526 15.5208 16.979 15.8473 16.979 16.25H18.0207C18.0207 15.272 17.2279 14.4792 16.2499 14.4792V15.5208Z" fill="white" />
+								</svg>
+							</button>
+						</div>
+						<div class="goods-card">
+							<div class="good-card__img">
+								<div class="promotion">
+									Акция
+								</div>
+								<picture>
+									<source srcset="images/home/goods/goods-1.webp 1x, images/home/goods/goods-1@2x.webp 1.3x" type="image/webp">
+									<source srcset="images/home/goods/goods-1.png 1x, images/home/goods/goods-1@2x.png 1.3x" type="image/png">
+									<img src="images/home/goods/goods-1.png" width="268" height="250" alt="">
+								</picture>
+							</div>
+							<div class="goods-card__price">
+								<span class="price">
+									32 500 ₽
+								</span>
+								<span class="price-old">
+									48 000 ₽
+								</span>
+							</div>
+							<a href="" class="goods-card__name">
+								Рабочее место серии «BASE SET»
+							</a>
+							<div class="goods-card__availability goods-card__availability--yes">
+								В наличии
+							</div>
+							<button class="goods-card__btn b-btn b-btn--primary">
+								<span>В корзину</span>
+								<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M16.2499 13.3333V13.8542H16.6565L16.7552 13.4597L16.2499 13.3333ZM5.41654 13.3333L4.91126 13.4597L5.00989 13.8542H5.41654V13.3333ZM18.3332 5L18.8385 5.12632L19.0003 4.47917H18.3332V5ZM1.24988 2.5V1.97917C1.04779 1.97917 0.863935 2.09607 0.778217 2.27909C0.692498 2.4621 0.720386 2.67818 0.849763 2.83343L1.24988 2.5ZM2.70821 2.5L3.21349 2.37368C3.15553 2.14182 2.9472 1.97917 2.70821 1.97917V2.5ZM16.2499 12.8125H5.41654V13.8542H16.2499V12.8125ZM5.92183 13.207L3.83849 4.87368L2.82793 5.12632L4.91126 13.4597L5.92183 13.207ZM3.33321 5.52083H18.3332V4.47917H3.33321V5.52083ZM17.8279 4.87368L15.7446 13.207L16.7552 13.4597L18.8385 5.12632L17.8279 4.87368ZM1.24988 3.02083H2.70821V1.97917H1.24988V3.02083ZM2.20293 2.62632L2.82793 5.12632L3.83849 4.87368L3.21349 2.37368L2.20293 2.62632ZM3.73333 4.66657L1.64999 2.16657L0.849763 2.83343L2.9331 5.33343L3.73333 4.66657ZM6.14571 16.25C6.14571 16.6527 5.81925 16.9792 5.41654 16.9792V18.0208C6.39455 18.0208 7.18738 17.228 7.18738 16.25H6.14571ZM5.41654 16.9792C5.01384 16.9792 4.68738 16.6527 4.68738 16.25H3.64571C3.64571 17.228 4.43854 18.0208 5.41654 18.0208V16.9792ZM4.68738 16.25C4.68738 15.8473 5.01384 15.5208 5.41654 15.5208V14.4792C4.43854 14.4792 3.64571 15.272 3.64571 16.25H4.68738ZM5.41654 15.5208C5.81925 15.5208 6.14571 15.8473 6.14571 16.25H7.18738C7.18738 15.272 6.39455 14.4792 5.41654 14.4792V15.5208ZM16.979 16.25C16.979 16.6527 16.6526 16.9792 16.2499 16.9792V18.0208C17.2279 18.0208 18.0207 17.228 18.0207 16.25H16.979ZM16.2499 16.9792C15.8472 16.9792 15.5207 16.6527 15.5207 16.25H14.479C14.479 17.228 15.2719 18.0208 16.2499 18.0208V16.9792ZM15.5207 16.25C15.5207 15.8473 15.8472 15.5208 16.2499 15.5208V14.4792C15.2719 14.4792 14.479 15.272 14.479 16.25H15.5207ZM16.2499 15.5208C16.6526 15.5208 16.979 15.8473 16.979 16.25H18.0207C18.0207 15.272 17.2279 14.4792 16.2499 14.4792V15.5208Z" fill="white" />
+								</svg>
+							</button>
+						</div>
+						<div class="goods-card">
+							<div class="good-card__img">
+								<div class="promotion">
+									Акция
+								</div>
+								<picture>
+									<source srcset="images/home/goods/goods-1.webp 1x, images/home/goods/goods-1@2x.webp 1.3x" type="image/webp">
+									<source srcset="images/home/goods/goods-1.png 1x, images/home/goods/goods-1@2x.png 1.3x" type="image/png">
+									<img src="images/home/goods/goods-1.png" width="268" height="250" alt="">
+								</picture>
+							</div>
+							<div class="goods-card__price">
+								<span class="price">
+									32 500 ₽
+								</span>
+								<span class="price-old">
+									48 000 ₽
+								</span>
+							</div>
+							<a href="" class="goods-card__name">
+								Рабочее место серии «BASE SET»
+							</a>
+							<div class="goods-card__availability goods-card__availability--yes">
+								В наличии
+							</div>
+							<button class="goods-card__btn b-btn b-btn--primary">
+								<span>В корзину</span>
+								<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M16.2499 13.3333V13.8542H16.6565L16.7552 13.4597L16.2499 13.3333ZM5.41654 13.3333L4.91126 13.4597L5.00989 13.8542H5.41654V13.3333ZM18.3332 5L18.8385 5.12632L19.0003 4.47917H18.3332V5ZM1.24988 2.5V1.97917C1.04779 1.97917 0.863935 2.09607 0.778217 2.27909C0.692498 2.4621 0.720386 2.67818 0.849763 2.83343L1.24988 2.5ZM2.70821 2.5L3.21349 2.37368C3.15553 2.14182 2.9472 1.97917 2.70821 1.97917V2.5ZM16.2499 12.8125H5.41654V13.8542H16.2499V12.8125ZM5.92183 13.207L3.83849 4.87368L2.82793 5.12632L4.91126 13.4597L5.92183 13.207ZM3.33321 5.52083H18.3332V4.47917H3.33321V5.52083ZM17.8279 4.87368L15.7446 13.207L16.7552 13.4597L18.8385 5.12632L17.8279 4.87368ZM1.24988 3.02083H2.70821V1.97917H1.24988V3.02083ZM2.20293 2.62632L2.82793 5.12632L3.83849 4.87368L3.21349 2.37368L2.20293 2.62632ZM3.73333 4.66657L1.64999 2.16657L0.849763 2.83343L2.9331 5.33343L3.73333 4.66657ZM6.14571 16.25C6.14571 16.6527 5.81925 16.9792 5.41654 16.9792V18.0208C6.39455 18.0208 7.18738 17.228 7.18738 16.25H6.14571ZM5.41654 16.9792C5.01384 16.9792 4.68738 16.6527 4.68738 16.25H3.64571C3.64571 17.228 4.43854 18.0208 5.41654 18.0208V16.9792ZM4.68738 16.25C4.68738 15.8473 5.01384 15.5208 5.41654 15.5208V14.4792C4.43854 14.4792 3.64571 15.272 3.64571 16.25H4.68738ZM5.41654 15.5208C5.81925 15.5208 6.14571 15.8473 6.14571 16.25H7.18738C7.18738 15.272 6.39455 14.4792 5.41654 14.4792V15.5208ZM16.979 16.25C16.979 16.6527 16.6526 16.9792 16.2499 16.9792V18.0208C17.2279 18.0208 18.0207 17.228 18.0207 16.25H16.979ZM16.2499 16.9792C15.8472 16.9792 15.5207 16.6527 15.5207 16.25H14.479C14.479 17.228 15.2719 18.0208 16.2499 18.0208V16.9792ZM15.5207 16.25C15.5207 15.8473 15.8472 15.5208 16.2499 15.5208V14.4792C15.2719 14.4792 14.479 15.272 14.479 16.25H15.5207ZM16.2499 15.5208C16.6526 15.5208 16.979 15.8473 16.979 16.25H18.0207C18.0207 15.272 17.2279 14.4792 16.2499 14.4792V15.5208Z" fill="white" />
+								</svg>
+							</button>
+						</div>
+						<div class="goods-card">
+							<div class="good-card__img">
+								<div class="promotion">
+									Акция
+								</div>
+								<picture>
+									<source srcset="images/home/goods/goods-1.webp 1x, images/home/goods/goods-1@2x.webp 1.3x" type="image/webp">
+									<source srcset="images/home/goods/goods-1.png 1x, images/home/goods/goods-1@2x.png 1.3x" type="image/png">
+									<img src="images/home/goods/goods-1.png" width="268" height="250" alt="">
+								</picture>
+							</div>
+							<div class="goods-card__price">
+								<span class="price">
+									32 500 ₽
+								</span>
+								<span class="price-old">
+									48 000 ₽
+								</span>
+							</div>
+							<a href="" class="goods-card__name">
+								Рабочее место серии «BASE SET»
+							</a>
+							<div class="goods-card__availability goods-card__availability--yes">
+								В наличии
+							</div>
+							<button class="goods-card__btn b-btn b-btn--primary">
+								<span>В корзину</span>
+								<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M16.2499 13.3333V13.8542H16.6565L16.7552 13.4597L16.2499 13.3333ZM5.41654 13.3333L4.91126 13.4597L5.00989 13.8542H5.41654V13.3333ZM18.3332 5L18.8385 5.12632L19.0003 4.47917H18.3332V5ZM1.24988 2.5V1.97917C1.04779 1.97917 0.863935 2.09607 0.778217 2.27909C0.692498 2.4621 0.720386 2.67818 0.849763 2.83343L1.24988 2.5ZM2.70821 2.5L3.21349 2.37368C3.15553 2.14182 2.9472 1.97917 2.70821 1.97917V2.5ZM16.2499 12.8125H5.41654V13.8542H16.2499V12.8125ZM5.92183 13.207L3.83849 4.87368L2.82793 5.12632L4.91126 13.4597L5.92183 13.207ZM3.33321 5.52083H18.3332V4.47917H3.33321V5.52083ZM17.8279 4.87368L15.7446 13.207L16.7552 13.4597L18.8385 5.12632L17.8279 4.87368ZM1.24988 3.02083H2.70821V1.97917H1.24988V3.02083ZM2.20293 2.62632L2.82793 5.12632L3.83849 4.87368L3.21349 2.37368L2.20293 2.62632ZM3.73333 4.66657L1.64999 2.16657L0.849763 2.83343L2.9331 5.33343L3.73333 4.66657ZM6.14571 16.25C6.14571 16.6527 5.81925 16.9792 5.41654 16.9792V18.0208C6.39455 18.0208 7.18738 17.228 7.18738 16.25H6.14571ZM5.41654 16.9792C5.01384 16.9792 4.68738 16.6527 4.68738 16.25H3.64571C3.64571 17.228 4.43854 18.0208 5.41654 18.0208V16.9792ZM4.68738 16.25C4.68738 15.8473 5.01384 15.5208 5.41654 15.5208V14.4792C4.43854 14.4792 3.64571 15.272 3.64571 16.25H4.68738ZM5.41654 15.5208C5.81925 15.5208 6.14571 15.8473 6.14571 16.25H7.18738C7.18738 15.272 6.39455 14.4792 5.41654 14.4792V15.5208ZM16.979 16.25C16.979 16.6527 16.6526 16.9792 16.2499 16.9792V18.0208C17.2279 18.0208 18.0207 17.228 18.0207 16.25H16.979ZM16.2499 16.9792C15.8472 16.9792 15.5207 16.6527 15.5207 16.25H14.479C14.479 17.228 15.2719 18.0208 16.2499 18.0208V16.9792ZM15.5207 16.25C15.5207 15.8473 15.8472 15.5208 16.2499 15.5208V14.4792C15.2719 14.4792 14.479 15.272 14.479 16.25H15.5207ZM16.2499 15.5208C16.6526 15.5208 16.979 15.8473 16.979 16.25H18.0207C18.0207 15.272 17.2279 14.4792 16.2499 14.4792V15.5208Z" fill="white" />
+								</svg>
+							</button>
+						</div>
+						<div class="goods-card">
+							<div class="good-card__img">
+								<div class="promotion">
+									Акция
+								</div>
+								<picture>
+									<source srcset="images/home/goods/goods-1.webp 1x, images/home/goods/goods-1@2x.webp 1.3x" type="image/webp">
+									<source srcset="images/home/goods/goods-1.png 1x, images/home/goods/goods-1@2x.png 1.3x" type="image/png">
+									<img src="images/home/goods/goods-1.png" width="268" height="250" alt="">
+								</picture>
+							</div>
+							<div class="goods-card__price">
+								<span class="price">
+									32 500 ₽
+								</span>
+								<span class="price-old">
+									48 000 ₽
+								</span>
+							</div>
+							<a href="" class="goods-card__name">
+								Рабочее место серии «BASE SET»
+							</a>
+							<div class="goods-card__availability goods-card__availability--yes">
+								В наличии
+							</div>
+							<button class="goods-card__btn b-btn b-btn--primary">
+								<span>В корзину</span>
+								<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M16.2499 13.3333V13.8542H16.6565L16.7552 13.4597L16.2499 13.3333ZM5.41654 13.3333L4.91126 13.4597L5.00989 13.8542H5.41654V13.3333ZM18.3332 5L18.8385 5.12632L19.0003 4.47917H18.3332V5ZM1.24988 2.5V1.97917C1.04779 1.97917 0.863935 2.09607 0.778217 2.27909C0.692498 2.4621 0.720386 2.67818 0.849763 2.83343L1.24988 2.5ZM2.70821 2.5L3.21349 2.37368C3.15553 2.14182 2.9472 1.97917 2.70821 1.97917V2.5ZM16.2499 12.8125H5.41654V13.8542H16.2499V12.8125ZM5.92183 13.207L3.83849 4.87368L2.82793 5.12632L4.91126 13.4597L5.92183 13.207ZM3.33321 5.52083H18.3332V4.47917H3.33321V5.52083ZM17.8279 4.87368L15.7446 13.207L16.7552 13.4597L18.8385 5.12632L17.8279 4.87368ZM1.24988 3.02083H2.70821V1.97917H1.24988V3.02083ZM2.20293 2.62632L2.82793 5.12632L3.83849 4.87368L3.21349 2.37368L2.20293 2.62632ZM3.73333 4.66657L1.64999 2.16657L0.849763 2.83343L2.9331 5.33343L3.73333 4.66657ZM6.14571 16.25C6.14571 16.6527 5.81925 16.9792 5.41654 16.9792V18.0208C6.39455 18.0208 7.18738 17.228 7.18738 16.25H6.14571ZM5.41654 16.9792C5.01384 16.9792 4.68738 16.6527 4.68738 16.25H3.64571C3.64571 17.228 4.43854 18.0208 5.41654 18.0208V16.9792ZM4.68738 16.25C4.68738 15.8473 5.01384 15.5208 5.41654 15.5208V14.4792C4.43854 14.4792 3.64571 15.272 3.64571 16.25H4.68738ZM5.41654 15.5208C5.81925 15.5208 6.14571 15.8473 6.14571 16.25H7.18738C7.18738 15.272 6.39455 14.4792 5.41654 14.4792V15.5208ZM16.979 16.25C16.979 16.6527 16.6526 16.9792 16.2499 16.9792V18.0208C17.2279 18.0208 18.0207 17.228 18.0207 16.25H16.979ZM16.2499 16.9792C15.8472 16.9792 15.5207 16.6527 15.5207 16.25H14.479C14.479 17.228 15.2719 18.0208 16.2499 18.0208V16.9792ZM15.5207 16.25C15.5207 15.8473 15.8472 15.5208 16.2499 15.5208V14.4792C15.2719 14.4792 14.479 15.272 14.479 16.25H15.5207ZM16.2499 15.5208C16.6526 15.5208 16.979 15.8473 16.979 16.25H18.0207C18.0207 15.272 17.2279 14.4792 16.2499 14.4792V15.5208Z" fill="white" />
+								</svg>
+							</button>
+						</div>
+						<div class="goods-card">
+							<div class="good-card__img">
+								<div class="promotion">
+									Акция
+								</div>
+								<picture>
+									<source srcset="images/home/goods/goods-1.webp 1x, images/home/goods/goods-1@2x.webp 1.3x" type="image/webp">
+									<source srcset="images/home/goods/goods-1.png 1x, images/home/goods/goods-1@2x.png 1.3x" type="image/png">
+									<img src="images/home/goods/goods-1.png" width="268" height="250" alt="">
+								</picture>
+							</div>
+							<div class="goods-card__price">
+								<span class="price">
+									32 500 ₽
+								</span>
+								<span class="price-old">
+									48 000 ₽
+								</span>
+							</div>
+							<a href="" class="goods-card__name">
+								Рабочее место серии «BASE SET»
+							</a>
+							<div class="goods-card__availability goods-card__availability--yes">
+								В наличии
+							</div>
+							<button class="goods-card__btn b-btn b-btn--primary">
+								<span>В корзину</span>
+								<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M16.2499 13.3333V13.8542H16.6565L16.7552 13.4597L16.2499 13.3333ZM5.41654 13.3333L4.91126 13.4597L5.00989 13.8542H5.41654V13.3333ZM18.3332 5L18.8385 5.12632L19.0003 4.47917H18.3332V5ZM1.24988 2.5V1.97917C1.04779 1.97917 0.863935 2.09607 0.778217 2.27909C0.692498 2.4621 0.720386 2.67818 0.849763 2.83343L1.24988 2.5ZM2.70821 2.5L3.21349 2.37368C3.15553 2.14182 2.9472 1.97917 2.70821 1.97917V2.5ZM16.2499 12.8125H5.41654V13.8542H16.2499V12.8125ZM5.92183 13.207L3.83849 4.87368L2.82793 5.12632L4.91126 13.4597L5.92183 13.207ZM3.33321 5.52083H18.3332V4.47917H3.33321V5.52083ZM17.8279 4.87368L15.7446 13.207L16.7552 13.4597L18.8385 5.12632L17.8279 4.87368ZM1.24988 3.02083H2.70821V1.97917H1.24988V3.02083ZM2.20293 2.62632L2.82793 5.12632L3.83849 4.87368L3.21349 2.37368L2.20293 2.62632ZM3.73333 4.66657L1.64999 2.16657L0.849763 2.83343L2.9331 5.33343L3.73333 4.66657ZM6.14571 16.25C6.14571 16.6527 5.81925 16.9792 5.41654 16.9792V18.0208C6.39455 18.0208 7.18738 17.228 7.18738 16.25H6.14571ZM5.41654 16.9792C5.01384 16.9792 4.68738 16.6527 4.68738 16.25H3.64571C3.64571 17.228 4.43854 18.0208 5.41654 18.0208V16.9792ZM4.68738 16.25C4.68738 15.8473 5.01384 15.5208 5.41654 15.5208V14.4792C4.43854 14.4792 3.64571 15.272 3.64571 16.25H4.68738ZM5.41654 15.5208C5.81925 15.5208 6.14571 15.8473 6.14571 16.25H7.18738C7.18738 15.272 6.39455 14.4792 5.41654 14.4792V15.5208ZM16.979 16.25C16.979 16.6527 16.6526 16.9792 16.2499 16.9792V18.0208C17.2279 18.0208 18.0207 17.228 18.0207 16.25H16.979ZM16.2499 16.9792C15.8472 16.9792 15.5207 16.6527 15.5207 16.25H14.479C14.479 17.228 15.2719 18.0208 16.2499 18.0208V16.9792ZM15.5207 16.25C15.5207 15.8473 15.8472 15.5208 16.2499 15.5208V14.4792C15.2719 14.4792 14.479 15.272 14.479 16.25H15.5207ZM16.2499 15.5208C16.6526 15.5208 16.979 15.8473 16.979 16.25H18.0207C18.0207 15.272 17.2279 14.4792 16.2499 14.4792V15.5208Z" fill="white" />
+								</svg>
+							</button>
+						</div>
+						<div class="goods-card">
+							<div class="good-card__img">
+								<div class="promotion">
+									Акция
+								</div>
+								<picture>
+									<source srcset="images/home/goods/goods-1.webp 1x, images/home/goods/goods-1@2x.webp 1.3x" type="image/webp">
+									<source srcset="images/home/goods/goods-1.png 1x, images/home/goods/goods-1@2x.png 1.3x" type="image/png">
+									<img src="images/home/goods/goods-1.png" width="268" height="250" alt="">
+								</picture>
+							</div>
+							<div class="goods-card__price">
+								<span class="price">
+									32 500 ₽
+								</span>
+								<span class="price-old">
+									48 000 ₽
+								</span>
+							</div>
+							<a href="" class="goods-card__name">
+								Рабочее место серии «BASE SET»
+							</a>
+							<div class="goods-card__availability goods-card__availability--yes">
+								В наличии
+							</div>
+							<button class="goods-card__btn b-btn b-btn--primary">
+								<span>В корзину</span>
+								<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M16.2499 13.3333V13.8542H16.6565L16.7552 13.4597L16.2499 13.3333ZM5.41654 13.3333L4.91126 13.4597L5.00989 13.8542H5.41654V13.3333ZM18.3332 5L18.8385 5.12632L19.0003 4.47917H18.3332V5ZM1.24988 2.5V1.97917C1.04779 1.97917 0.863935 2.09607 0.778217 2.27909C0.692498 2.4621 0.720386 2.67818 0.849763 2.83343L1.24988 2.5ZM2.70821 2.5L3.21349 2.37368C3.15553 2.14182 2.9472 1.97917 2.70821 1.97917V2.5ZM16.2499 12.8125H5.41654V13.8542H16.2499V12.8125ZM5.92183 13.207L3.83849 4.87368L2.82793 5.12632L4.91126 13.4597L5.92183 13.207ZM3.33321 5.52083H18.3332V4.47917H3.33321V5.52083ZM17.8279 4.87368L15.7446 13.207L16.7552 13.4597L18.8385 5.12632L17.8279 4.87368ZM1.24988 3.02083H2.70821V1.97917H1.24988V3.02083ZM2.20293 2.62632L2.82793 5.12632L3.83849 4.87368L3.21349 2.37368L2.20293 2.62632ZM3.73333 4.66657L1.64999 2.16657L0.849763 2.83343L2.9331 5.33343L3.73333 4.66657ZM6.14571 16.25C6.14571 16.6527 5.81925 16.9792 5.41654 16.9792V18.0208C6.39455 18.0208 7.18738 17.228 7.18738 16.25H6.14571ZM5.41654 16.9792C5.01384 16.9792 4.68738 16.6527 4.68738 16.25H3.64571C3.64571 17.228 4.43854 18.0208 5.41654 18.0208V16.9792ZM4.68738 16.25C4.68738 15.8473 5.01384 15.5208 5.41654 15.5208V14.4792C4.43854 14.4792 3.64571 15.272 3.64571 16.25H4.68738ZM5.41654 15.5208C5.81925 15.5208 6.14571 15.8473 6.14571 16.25H7.18738C7.18738 15.272 6.39455 14.4792 5.41654 14.4792V15.5208ZM16.979 16.25C16.979 16.6527 16.6526 16.9792 16.2499 16.9792V18.0208C17.2279 18.0208 18.0207 17.228 18.0207 16.25H16.979ZM16.2499 16.9792C15.8472 16.9792 15.5207 16.6527 15.5207 16.25H14.479C14.479 17.228 15.2719 18.0208 16.2499 18.0208V16.9792ZM15.5207 16.25C15.5207 15.8473 15.8472 15.5208 16.2499 15.5208V14.4792C15.2719 14.4792 14.479 15.272 14.479 16.25H15.5207ZM16.2499 15.5208C16.6526 15.5208 16.979 15.8473 16.979 16.25H18.0207C18.0207 15.272 17.2279 14.4792 16.2499 14.4792V15.5208Z" fill="white" />
+								</svg>
+							</button>
+						</div>
+						<div class="goods-card">
+							<div class="good-card__img">
+								<div class="promotion">
+									Акция
+								</div>
+								<picture>
+									<source srcset="images/home/goods/goods-1.webp 1x, images/home/goods/goods-1@2x.webp 1.3x" type="image/webp">
+									<source srcset="images/home/goods/goods-1.png 1x, images/home/goods/goods-1@2x.png 1.3x" type="image/png">
+									<img src="images/home/goods/goods-1.png" width="268" height="250" alt="">
+								</picture>
+							</div>
+							<div class="goods-card__price">
+								<span class="price">
+									32 500 ₽
+								</span>
+								<span class="price-old">
+									48 000 ₽
+								</span>
+							</div>
+							<a href="" class="goods-card__name">
+								Рабочее место серии «BASE SET»
+							</a>
+							<div class="goods-card__availability goods-card__availability--yes">
+								В наличии
+							</div>
+							<button class="goods-card__btn b-btn b-btn--primary">
+								<span>В корзину</span>
+								<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M16.2499 13.3333V13.8542H16.6565L16.7552 13.4597L16.2499 13.3333ZM5.41654 13.3333L4.91126 13.4597L5.00989 13.8542H5.41654V13.3333ZM18.3332 5L18.8385 5.12632L19.0003 4.47917H18.3332V5ZM1.24988 2.5V1.97917C1.04779 1.97917 0.863935 2.09607 0.778217 2.27909C0.692498 2.4621 0.720386 2.67818 0.849763 2.83343L1.24988 2.5ZM2.70821 2.5L3.21349 2.37368C3.15553 2.14182 2.9472 1.97917 2.70821 1.97917V2.5ZM16.2499 12.8125H5.41654V13.8542H16.2499V12.8125ZM5.92183 13.207L3.83849 4.87368L2.82793 5.12632L4.91126 13.4597L5.92183 13.207ZM3.33321 5.52083H18.3332V4.47917H3.33321V5.52083ZM17.8279 4.87368L15.7446 13.207L16.7552 13.4597L18.8385 5.12632L17.8279 4.87368ZM1.24988 3.02083H2.70821V1.97917H1.24988V3.02083ZM2.20293 2.62632L2.82793 5.12632L3.83849 4.87368L3.21349 2.37368L2.20293 2.62632ZM3.73333 4.66657L1.64999 2.16657L0.849763 2.83343L2.9331 5.33343L3.73333 4.66657ZM6.14571 16.25C6.14571 16.6527 5.81925 16.9792 5.41654 16.9792V18.0208C6.39455 18.0208 7.18738 17.228 7.18738 16.25H6.14571ZM5.41654 16.9792C5.01384 16.9792 4.68738 16.6527 4.68738 16.25H3.64571C3.64571 17.228 4.43854 18.0208 5.41654 18.0208V16.9792ZM4.68738 16.25C4.68738 15.8473 5.01384 15.5208 5.41654 15.5208V14.4792C4.43854 14.4792 3.64571 15.272 3.64571 16.25H4.68738ZM5.41654 15.5208C5.81925 15.5208 6.14571 15.8473 6.14571 16.25H7.18738C7.18738 15.272 6.39455 14.4792 5.41654 14.4792V15.5208ZM16.979 16.25C16.979 16.6527 16.6526 16.9792 16.2499 16.9792V18.0208C17.2279 18.0208 18.0207 17.228 18.0207 16.25H16.979ZM16.2499 16.9792C15.8472 16.9792 15.5207 16.6527 15.5207 16.25H14.479C14.479 17.228 15.2719 18.0208 16.2499 18.0208V16.9792ZM15.5207 16.25C15.5207 15.8473 15.8472 15.5208 16.2499 15.5208V14.4792C15.2719 14.4792 14.479 15.272 14.479 16.25H15.5207ZM16.2499 15.5208C16.6526 15.5208 16.979 15.8473 16.979 16.25H18.0207C18.0207 15.272 17.2279 14.4792 16.2499 14.4792V15.5208Z" fill="white" />
+								</svg>
+							</button>
+						</div>
+					</div>
+					<div class="pagination">
+						<ul class="pagination__list">
+							<li class="pagination__item">
+								<a href="#" class="pagination__link">
+									<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M23.1581 26.4091C23.0781 26.4091 22.9915 26.3824 22.8981 26.3291C22.8181 26.2758 22.7448 26.2358 22.6781 26.2091L16.3781 21.8691C16.1781 21.7358 16.0315 21.6024 15.9381 21.4691C15.8448 21.3224 15.7981 21.1558 15.7981 20.9691V20.6091C15.7981 20.4224 15.8448 20.2624 15.9381 20.1291C16.0315 19.9958 16.1781 19.8558 16.3781 19.7091L22.6781 15.3891C22.7448 15.3491 22.8181 15.3024 22.8981 15.2491C22.9915 15.1958 23.0781 15.1691 23.1581 15.1691C23.2648 15.1691 23.3581 15.2091 23.4381 15.2891C23.5181 15.3558 23.5581 15.4558 23.5581 15.5891V16.4691C23.5581 16.6158 23.5181 16.7424 23.4381 16.8491C23.3581 16.9424 23.2448 17.0358 23.0981 17.1291L17.7381 20.7891L23.0981 24.4491C23.2448 24.5558 23.3581 24.6558 23.4381 24.7491C23.5181 24.8424 23.5581 24.9691 23.5581 25.1291V26.0091C23.5581 26.1291 23.5181 26.2291 23.4381 26.3091C23.3581 26.3758 23.2648 26.4091 23.1581 26.4091Z" fill="#585857" />
+									</svg>
+								</a>
+							</li>
+							<li class="pagination__item">
+								<a href="#" class="pagination__link">
+									1
+								</a>
+							</li>
+							<li class="pagination__item">
+								<a href="#" class="pagination__link active">
+									2
+								</a>
+							</li>
+							<li class="pagination__item">
+								<a href="#" class="pagination__link">
+									3
+								</a>
+							</li>
+							<li class="pagination__item">
+								<a href="#" class="pagination__link">
+									4
+								</a>
+							</li>
+							<li class="pagination__item">
+								<a href="#" class="pagination__link">
+									...
+								</a>
+							</li>
+							<li class="pagination__item">
+								<a href="#" class="pagination__link">
+									8
+								</a>
+							</li>
+							<li class="pagination__item">
+								<a href="#" class="pagination__link">
+									<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M16.8479 26.3891C16.7412 26.3891 16.6479 26.3558 16.5679 26.2891C16.4879 26.2224 16.4479 26.1224 16.4479 25.9891V25.1091C16.4479 24.9491 16.4812 24.8224 16.5479 24.7291C16.6279 24.6358 16.7479 24.5424 16.9079 24.4491L22.2479 20.7891L16.9079 17.1291C16.7479 17.0224 16.6279 16.9224 16.5479 16.8291C16.4812 16.7358 16.4479 16.6091 16.4479 16.4491V15.5691C16.4479 15.4358 16.4879 15.3358 16.5679 15.2691C16.6479 15.2024 16.7412 15.1691 16.8479 15.1691C16.9279 15.1691 17.0146 15.1958 17.1079 15.2491C17.2012 15.2891 17.2746 15.3291 17.3279 15.3691L23.6079 19.6891C23.8212 19.8358 23.9679 19.9758 24.0479 20.1091C24.1412 20.2424 24.1879 20.4091 24.1879 20.6091V20.9491C24.1879 21.1358 24.1412 21.3024 24.0479 21.4491C23.9679 21.5824 23.8212 21.7224 23.6079 21.8691L17.3279 26.1891C17.2746 26.2291 17.2012 26.2758 17.1079 26.3291C17.0146 26.3691 16.9279 26.3891 16.8479 26.3891Z" fill="#585857" />
+									</svg>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			<section class="home-news">
+				<div class="container">
+					<div class="home-news__head">
+						<h2 class="home-news__title section-title">
+							Новости
+						</h2>
+						<a href="#" class="home-news__link link-head">
+							Все новости
+						</a>
+					</div>
+					<div class="home-news__grid">
+						<div class="news-item">
+							<div class="news-item__img">
+
+							</div>
+							<div class="news-item__main">
+								<span class="news-item__date">
+									13 марта 2023
+								</span>
+								<a href="#" class="news-item__link">
+									В чем отличие статики от не статики?
+								</a>
+							</div>
+						</div>
+						<div class="news-item">
+							<div class="news-item__img">
+
+							</div>
+							<div class="news-item__main">
+								<span class="news-item__date">
+									13 марта 2023
+								</span>
+								<a href="#" class="news-item__link">
+									В чем отличие статики от не статики?
+								</a>
+							</div>
+						</div>
+						<div class="news-item">
+							<div class="news-item__img">
+
+							</div>
+							<div class="news-item__main">
+								<span class="news-item__date">
+									13 марта 2023
+								</span>
+								<a href="#" class="news-item__link">
+									В чем отличие статики от не статики?
+								</a>
+							</div>
+						</div>
+						<div class="news-item">
+							<div class="news-item__img">
+
+							</div>
+							<div class="news-item__main">
+								<span class="news-item__date">
+									13 марта 2023
+								</span>
+								<a href="#" class="news-item__link">
+									В чем отличие статики от не статики?
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="feedback">
+				<div class="container">
+					<div class="feedback__wrap">
+						<div class="feedback__left">
+							<div class="feedback__top">
+								<h2 class="feedback__title section-title">
+									Остались вопросы?
+								</h2>
+								<div class="feedback__text">
+									<p>
+										Сообщите нам, что вас интересует, и мы обязательно ответим
+									</p>
+								</div>
+							</div>
+							<div class="feedback__form">
+								<form action="#" class="form form--feedback" id="feedback">
+									<div class="form__row">
+										<div class="form__wrap">
+											<label for="" class="form__label">
+												<input type="text" class="form__input" placeholder="Имя">
+											</label>
+										</div>
+										<div class="form__wrap">
+											<label for="" class="form__label">
+												<input type="text" class="form__input" placeholder="Телефон">
+											</label>
+										</div>
+									</div>
+									<div class="form__wrapper">
+										<textarea name="" id="" cols="30" rows="10" class="form__area" placeholder="Пожалуйста, опишите подробно ваше обращение."></textarea>
+									</div>
+									<div class="form__bottom">
+										<button type="button" class="b-btn b-btn--primary">Отправить</button>
+										<span>
+											Нажимая «Отправить», я даю свое согласие на обработку персональных данных
+										</span>
+									</div>
+								</form>
+							</div>
+						</div>
+						<div class="feedback__right">
+							<picture>
+								<source srcset="images/home/feedback/questions.webp 1x, images/home/category/category-1@2x.webp 1.3x" type="image/webp">
+								<source srcset="images/home/feedback/questions.png 1x, images/home/feedback/questions@2x.png 1.3x" type="image/png">
+								<img src="images/home/feedback/questions.png" width="550" height="504" alt="">
+							</picture>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+		</div>
+		<!-- Footer -->
+		<footer class="footer" id="footer">
+			<div class="container">
+				<div class="footer__top">
+					<nav class="footer__menu">
+						<div class="footer__item">
+							<button type="button" class="footer__head">
+								<span>
+									Верстаки
+								</span>
+								<img src="images/icon/down.svg" alt="" width="20" height="20">
+							</button>
+							<ul class="menu-item">
+								<li>
+									<a href="#">
+										Подкатегория
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Подкатегория
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Подкатегория
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Подкатегория
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Подкатегория
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="footer__item">
+							<button type="button" class="footer__head">
+								<span>
+									Оборудование
+								</span>
+								<img src="images/icon/down.svg" alt="" width="20" height="20">
+							</button>
+							<ul class="menu-item">
+								<li>
+									<a href="#">
+										Подкатегория
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Подкатегория
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Подкатегория
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Подкатегория
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Подкатегория
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="footer__item">
+							<button type="button" class="footer__head">
+								<span>
+									Аксессуары
+								</span>
+								<img src="images/icon/down.svg" alt="" width="20" height="20">
+							</button>
+							<ul class="menu-item">
+								<li>
+									<a href="#">
+										Подкатегория
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Подкатегория
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Подкатегория
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Подкатегория
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Подкатегория
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="footer__item">
+							<button type="button" class="footer__head">
+								<span>
+									Антистатическая и промышленная мебель
+								</span>
+								<img src="images/icon/down.svg" alt="" width="20" height="20">
+							</button>
+							<ul class="menu-item">
+								<li>
+									<a href="#">
+										Подкатегория
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Подкатегория
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Подкатегория
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Подкатегория
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Подкатегория
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="footer__item">
+							<button type="button" class="footer__head">
+								<span>
+									Лабораторная мебель
+								</span>
+								<img src="images/icon/down.svg" alt="" width="20" height="20">
+							</button>
+							<ul class="menu-item">
+								<li>
+									<a href="#">
+										Подкатегория
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Подкатегория
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Подкатегория
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Подкатегория
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Подкатегория
+									</a>
+								</li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+				<div class="footer__middle">
+					<div class="footer__contacts">
+						<span>Контакты</span>
+						<div class="footer__wrap">
+							<a href="tel:+78435582230">+7 (843) 558-22-30</a>
+							<a href="mailto:info@akmetron.ru">info@akmetron.ru</a>
+						</div>
+					</div>
+					<ul class="footer__nav">
+						<li>
+							<a href="#">
+								Услуги
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Новости
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								О компании
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Контакты
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__bottom">
+					<a href="#">© 2023 Акметрон</a>
+					<a href="#">Политика конфиденциальности</a>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+	<script src="js/app.min.js"></script>
+
+	<script src="js/slider.min.js"></script>
+
+</body>
+
+</html>
