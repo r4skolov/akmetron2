@@ -10929,6 +10929,18 @@ sliderInteresting.forEach(item => slider(item, {
     prevEl: '.interesting-slider-prev'
   }
 }));
+const sliderNews = document.querySelectorAll('[data-slider="news-slider"]');
+sliderNews.forEach(item => slider(item, {
+  loop: false,
+  watchSlidesProgress: true,
+  freeMode: true
+}));
+const sliderTrust = document.querySelectorAll('[data-slider="trust-slider"]');
+sliderTrust.forEach(item => slider(item, {
+  loop: false,
+  watchSlidesProgress: true,
+  freeMode: true
+}));
 /******/ })()
 ;
 //# sourceMappingURL=slider.js.map

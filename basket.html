@@ -256,8 +256,8 @@
 													<path d="M14.597 18.1447C14.4903 18.1447 14.3997 18.1127 14.325 18.0487C14.261 17.974 14.229 17.8834 14.229 17.7767V17.1687C14.229 17.062 14.261 16.9767 14.325 16.9127C14.3997 16.838 14.4903 16.8007 14.597 16.8007H19.397C19.5037 16.8007 19.589 16.838 19.653 16.9127C19.7277 16.9767 19.765 17.062 19.765 17.1687V17.7767C19.765 17.8834 19.7277 17.974 19.653 18.0487C19.589 18.1127 19.5037 18.1447 19.397 18.1447H14.597Z" fill="#CDCDCD" />
 												</svg>
 											</button>
-											<label for="counter">
-												<input type="text" id="counter" name="counter" value="1">
+											<label for="counter-2">
+												<input type="text" id="counter-2" name="counter-2" value="1">
 											</label>
 											<button type="button" class="plus">
 												<svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -770,20 +770,20 @@
 						</div>
 					</div>
 					<div class="feedback__form">
-						<form action="#" class="form form--feedback" id="feedback">
+						<form action="#" class="form form--feedback" id="feedback-modal">
 							<div class="form__row">
 								<div class="form__wrap">
 									<div class="form__group">
-										<label for="form-name" class="form__label">
-											<input name="form-name" type="text" class="form__input" placeholder="none">
+										<label for="form-name-modal" class="form__label">
+											<input name="form-name" type="text" class="form__input" placeholder="none" id="form-name-modal">
 											<span class="form__name">Имя</span>
 										</label>
 									</div>
 								</div>
 								<div class="form__wrap">
 									<div class="form__group">
-										<label for="form-phone" class="form__label">
-											<input name="form-phone" type="text" class="form__input" placeholder="Телефон">
+										<label for="form-phone-modal" class="form__label">
+											<input name="form-phone" type="text" class="form__input" placeholder="Телефон" id="form-phone-modal">
 											<span class="form__name">Телефон</span>
 										</label>
 									</div>
@@ -791,7 +791,9 @@
 								</div>
 							</div>
 							<div class="form__wrapper">
-								<textarea name="" id="" cols="30" rows="10" class="form__area" placeholder="Пожалуйста, опишите подробно ваше обращение."></textarea>
+								<label for="form-area-modal" class="form__label">
+									<textarea name="form-area-modal" id="form-area-modal" cols="30" rows="10" class="form__area" placeholder="Пожалуйста, опишите подробно ваше обращение."></textarea>
+								</label>
 							</div>
 							<div class="form__bottom">
 								<button type="button" class="form__btn b-btn b-btn--primary">Отправить</button>

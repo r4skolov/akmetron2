@@ -169,10 +169,10 @@
 					<div class="swiper swiper--category">
 						<div class="swiper-wrapper">
 							<div class="swiper-slide">
-								<a href="#" class="category-item category-item--violet ">
+								<a href="#" class="category-item category-item--violet active">
 									<picture class="category-item__image">
 										<source srcset="images/home/category/category-1.webp 1x, images/home/category/category-1@2x.webp 1.3x" type="image/webp">
-										<source srcset="images/home/category/category-1.png 1x, images/home/category/category-1@2x.jpg 1.3x" type="image/png">
+										<source srcset="images/home/category/category-1.png 1x, images/home/category/category-1@2x.png 1.3x" type="image/png">
 										<img src="images/home/category/category-1.png" width="225" height="232" alt="">
 									</picture>
 									<span class="category-item__name">
@@ -181,7 +181,7 @@
 								</a>
 							</div>
 							<div class="swiper-slide">
-								<a href="#" class="category-item category-item--light ">
+								<a href="#" class="category-item category-item--light active">
 									<picture class="category-item__image">
 										<source srcset="images/home/category/category-2.webp 1x, images/home/category/category-2@2x.webp 1.3x" type="image/webp">
 										<source srcset="images/home/category/category-2.png 1x, images/home/category/category-2@2x.png 1.3x" type="image/png">
@@ -193,7 +193,7 @@
 								</a>
 							</div>
 							<div class="swiper-slide">
-								<a href="#" class="category-item category-item--orange ">
+								<a href="#" class="category-item category-item--orange active">
 									<picture class="category-item__image">
 										<source srcset="images/home/category/category-3.webp 1x, images/home/category/category-3@2x.webp 1.3x" type="image/webp">
 										<source srcset="images/home/category/category-3.png 1x, images/home/category/category-3@2x.png 1.3x" type="image/png">
@@ -205,7 +205,7 @@
 								</a>
 							</div>
 							<div class="swiper-slide">
-								<a href="#" class="category-item category-item--green ">
+								<a href="#" class="category-item category-item--green active">
 									<picture class="category-item__image">
 										<source srcset="images/home/category/category-4.webp 1x, images/home/category/category-4@2x.webp 1.3x" type="image/webp">
 										<source srcset="images/home/category/category-4.png 1x, images/home/category/category-4@2x.png 1.3x" type="image/png">
@@ -217,7 +217,7 @@
 								</a>
 							</div>
 							<div class="swiper-slide">
-								<a href="#" class="category-item category-item--yellow ">
+								<a href="#" class="category-item category-item--yellow active">
 									<picture class="category-item__image">
 										<source srcset="images/home/category/category-5.webp 1x, images/home/category/category-5@2x.webp 1.3x" type="image/webp">
 										<source srcset="images/home/category/category-5.png 1x, images/home/category/category-5@2x.png 1.3x" type="image/png">
@@ -676,7 +676,7 @@
 				</div>
 			</section>
 
-			<section class="home-news">
+			<section class="home-news" data-slider="news-slider">
 				<div class="container">
 					<div class="home-news__head">
 						<h2 class="home-news__title section-title">
@@ -686,57 +686,99 @@
 							Все новости
 						</a>
 					</div>
-					<div class="home-news__grid">
-						<div class="news-item">
-							<div class="news-item__img">
+					<div class="home-news__slider">
+						<div class="swiper swiper--news">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="news-item">
+										<div class="news-item__img">
 
-							</div>
-							<div class="news-item__main">
-								<span class="news-item__date">
-									13 марта 2023
-								</span>
-								<a href="#" class="news-item__link">
-									В чем отличие статики от не статики?
-								</a>
-							</div>
-						</div>
-						<div class="news-item">
-							<div class="news-item__img">
+										</div>
+										<div class="news-item__main">
+											<span class="news-item__date">
+												13 марта 2023
+											</span>
+											<a href="#" class="news-item__link">
+												В чем отличие статики от не статики?
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="news-item">
+										<div class="news-item__img">
 
-							</div>
-							<div class="news-item__main">
-								<span class="news-item__date">
-									13 марта 2023
-								</span>
-								<a href="#" class="news-item__link">
-									В чем отличие статики от не статики?
-								</a>
-							</div>
-						</div>
-						<div class="news-item">
-							<div class="news-item__img">
+										</div>
+										<div class="news-item__main">
+											<span class="news-item__date">
+												13 марта 2023
+											</span>
+											<a href="#" class="news-item__link">
+												В чем отличие статики от не статики?
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="news-item">
+										<div class="news-item__img">
 
-							</div>
-							<div class="news-item__main">
-								<span class="news-item__date">
-									13 марта 2023
-								</span>
-								<a href="#" class="news-item__link">
-									В чем отличие статики от не статики?
-								</a>
-							</div>
-						</div>
-						<div class="news-item">
-							<div class="news-item__img">
+										</div>
+										<div class="news-item__main">
+											<span class="news-item__date">
+												13 марта 2023
+											</span>
+											<a href="#" class="news-item__link">
+												В чем отличие статики от не статики?
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="news-item">
+										<div class="news-item__img">
 
-							</div>
-							<div class="news-item__main">
-								<span class="news-item__date">
-									13 марта 2023
-								</span>
-								<a href="#" class="news-item__link">
-									В чем отличие статики от не статики?
-								</a>
+										</div>
+										<div class="news-item__main">
+											<span class="news-item__date">
+												13 марта 2023
+											</span>
+											<a href="#" class="news-item__link">
+												В чем отличие статики от не статики?
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="news-item">
+										<div class="news-item__img">
+
+										</div>
+										<div class="news-item__main">
+											<span class="news-item__date">
+												13 марта 2023
+											</span>
+											<a href="#" class="news-item__link">
+												В чем отличие статики от не статики?
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="news-item">
+										<div class="news-item__img">
+
+										</div>
+										<div class="news-item__main">
+											<span class="news-item__date">
+												13 марта 2023
+											</span>
+											<a href="#" class="news-item__link">
+												В чем отличие статики от не статики?
+											</a>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -763,7 +805,7 @@
 										<div class="form__wrap">
 											<div class="form__group">
 												<label for="form-name" class="form__label">
-													<input name="form-name" type="text" class="form__input" placeholder="none">
+													<input name="form-name" type="text" class="form__input" placeholder="none" id="form-name">
 													<span class="form__name">Имя</span>
 												</label>
 											</div>
@@ -771,7 +813,7 @@
 										<div class="form__wrap">
 											<div class="form__group">
 												<label for="form-phone" class="form__label">
-													<input name="form-phone" type="text" class="form__input" placeholder="Телефон">
+													<input name="form-phone" type="text" class="form__input" placeholder="Телефон" id="form-phone">
 													<span class="form__name">Телефон</span>
 												</label>
 											</div>
@@ -779,7 +821,10 @@
 										</div>
 									</div>
 									<div class="form__wrapper">
-										<textarea name="" id="" cols="30" rows="10" class="form__area" placeholder="Пожалуйста, опишите подробно ваше обращение."></textarea>
+										<label for="form-area">
+											<textarea name="form-area" id="form-area" cols="30" rows="10" class="form__area" placeholder="Пожалуйста, опишите подробно ваше обращение."></textarea>
+										</label>
+
 									</div>
 									<div class="form__bottom">
 										<button type="button" class="form__btn b-btn b-btn--primary">Отправить</button>
@@ -792,7 +837,7 @@
 						</div>
 						<div class="feedback__right">
 							<picture>
-								<source srcset="images/home/feedback/questions.webp 1x, images/home/category/category-1@2x.webp 1.3x" type="image/webp">
+								<source srcset="images/home/feedback/questions.webp 1x, images/home/feedback/questions@2x.webp 1.3x" type="image/webp">
 								<source srcset="images/home/feedback/questions.png 1x, images/home/feedback/questions@2x.png 1.3x" type="image/png">
 								<img src="images/home/feedback/questions.png" width="550" height="504" alt="">
 							</picture>
@@ -1046,20 +1091,20 @@
 						</div>
 					</div>
 					<div class="feedback__form">
-						<form action="#" class="form form--feedback" id="feedback">
+						<form action="#" class="form form--feedback" id="feedback-modal">
 							<div class="form__row">
 								<div class="form__wrap">
 									<div class="form__group">
-										<label for="form-name" class="form__label">
-											<input name="form-name" type="text" class="form__input" placeholder="none">
+										<label for="form-name-modal" class="form__label">
+											<input name="form-name" type="text" class="form__input" placeholder="none" id="form-name-modal">
 											<span class="form__name">Имя</span>
 										</label>
 									</div>
 								</div>
 								<div class="form__wrap">
 									<div class="form__group">
-										<label for="form-phone" class="form__label">
-											<input name="form-phone" type="text" class="form__input" placeholder="Телефон">
+										<label for="form-phone-modal" class="form__label">
+											<input name="form-phone" type="text" class="form__input" placeholder="Телефон" id="form-phone-modal">
 											<span class="form__name">Телефон</span>
 										</label>
 									</div>
@@ -1067,7 +1112,9 @@
 								</div>
 							</div>
 							<div class="form__wrapper">
-								<textarea name="" id="" cols="30" rows="10" class="form__area" placeholder="Пожалуйста, опишите подробно ваше обращение."></textarea>
+								<label for="form-area-modal" class="form__label">
+									<textarea name="form-area-modal" id="form-area-modal" cols="30" rows="10" class="form__area" placeholder="Пожалуйста, опишите подробно ваше обращение."></textarea>
+								</label>
 							</div>
 							<div class="form__bottom">
 								<button type="button" class="form__btn b-btn b-btn--primary">Отправить</button>
