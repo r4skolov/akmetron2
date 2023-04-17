@@ -30,9 +30,9 @@ if (typeof window !== 'undefined') {
 var isIosDevice = typeof window !== 'undefined' && window.navigator && window.navigator.platform && (/iP(ad|hone|od)/.test(window.navigator.platform) || window.navigator.platform === 'MacIntel' && window.navigator.maxTouchPoints > 1);
 
 
-var locks = (/* unused pure expression or super */ null && ([]));
+var locks = [];
 var documentListenerAdded = false;
-var initialClientY = (/* unused pure expression or super */ null && (-1));
+var initialClientY = -1;
 var previousBodyOverflowSetting = void 0;
 var previousBodyPosition = void 0;
 var previousBodyPaddingRight = void 0;
@@ -348,12 +348,109 @@ class MainMenu {
     this._close();
   }
 }
+;// CONCATENATED MODULE: ./source/js/components/input.js
+const inputAnimate = () => {
+  const inputs = document.querySelectorAll('input');
+  const btnInput = document.querySelector('.form__btn');
+  inputs.forEach(input => {
+    input.addEventListener('input', () => {
+      if (input.value) {
+        input.classList.add('form__input--active');
+        btnInput.classList.add('form__btn--active');
+      } else {
+        input.classList.remove('form__input--active');
+        btnInput.classList.remove('form__btn--active');
+      }
+    });
+  });
+};
+/* harmony default export */ const input = (inputAnimate);
+;// CONCATENATED MODULE: ./source/js/components/modal.js
+
+const showPopupBtns = document.querySelectorAll('.js-show-popup');
+const popups = document.querySelectorAll('.js-popup');
+const {
+  body
+} = document;
+const overlay = document.querySelector('.js-overlay');
+const CLASS_ACTIVE = 'active';
+const CLASS_OVERFLOW = 'overflow';
+const popupsFunc = (() => {
+  const showPopup = event => {
+    const openBtn = event.target.closest('.js-show-popup');
+    const activePopup = document.querySelector('.js-popup.active');
+    const targetPopup = document.querySelector(`[data-popup=${openBtn.dataset.trigger}]`);
+    if (activePopup) {
+      activePopup.classList.remove(CLASS_ACTIVE);
+    }
+    if (openBtn.dataset.tab) {
+      targetPopup.querySelector(`[data-tab="${openBtn.dataset.tab}"]`).classList.add(CLASS_ACTIVE);
+      targetPopup.querySelector(`[data-content="${openBtn.dataset.tab}"]`).classList.add(CLASS_ACTIVE);
+    }
+    targetPopup.classList.add(CLASS_ACTIVE);
+    body.classList.add(CLASS_OVERFLOW);
+    overlay.classList.add(CLASS_ACTIVE);
+  };
+  const hidePopup = activePopup => {
+    if (!activePopup) {
+      return;
+    }
+    body.classList.remove(CLASS_OVERFLOW);
+    overlay.classList.remove(CLASS_ACTIVE);
+    activePopup.classList.remove(CLASS_ACTIVE);
+    if (document.querySelector('.active[data-content]') && document.querySelector('.active[data-tab]')) {
+      document.querySelector('.active[data-content]').classList.remove(CLASS_ACTIVE);
+      document.querySelector('.active[data-tab]').classList.remove(CLASS_ACTIVE);
+    }
+  };
+  const showPopupInit = () => {
+    if (showPopupBtns.length) {
+      showPopupBtns.forEach(opener => {
+        opener.addEventListener('click', event => {
+          showPopup(event);
+          bodyScrollLock_esm_disableBodyScroll(body);
+        });
+      });
+    }
+    if (overlay) {
+      overlay.addEventListener('click', () => {
+        hidePopup(document.querySelector('.js-popup.active'));
+        bodyScrollLock_esm_enableBodyScroll(body);
+      });
+    }
+    if (popups.length) {
+      popups.forEach(popup => {
+        popup.addEventListener('click', event => {
+          const closeBtn = event.target.closest('.js-popup-close');
+          if (!closeBtn) {
+            return;
+          }
+          hidePopup(popup);
+          bodyScrollLock_esm_enableBodyScroll(body);
+        });
+      });
+    }
+  };
+  const init = () => {
+    if (popups.length) {
+      showPopupInit();
+    }
+  };
+  return {
+    init
+  };
+})();
+/* harmony default export */ const modal = (popupsFunc);
 ;// CONCATENATED MODULE: ./source/js/index.js
+
+
 
 
 
 // Init
 function init() {
+  input();
+  modal.init();
   function footerMenu() {
     const dropDown = document.querySelectorAll('.footer__item');
     dropDown.forEach(el => {
@@ -395,6 +492,19 @@ function init() {
     });
   }
   tabs();
+  function cart() {
+    const cartBtn = document.querySelector('.cart-btn');
+    const cart = document.querySelector('.cart');
+    cartBtn.addEventListener('click', () => {
+      cart.classList.toggle('active');
+    });
+    document.addEventListener('click', e => {
+      if (!e.target.classList.contains('cart') && !e.target.closest('.cart') && !e.target.classList.contains('cart-btn')) {
+        cart.classList.remove('active');
+      }
+    });
+  }
+  cart();
 }
 (function () {
   init();

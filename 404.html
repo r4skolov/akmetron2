@@ -77,7 +77,7 @@
 							<div class="header-search">
 								<form action="#" class="header-search__form">
 									<input type="text" placeholder="Что вы ищите?">
-									<button type="button" class="b-btn b-btn--primary">
+									<button type="button" class="b-btn b-btn--primary js-show-popup" data-trigger="feedback-popup">
 										<span class="b-btn__icon">
 											<img src="images/icon/zoom.svg" alt="" width="16" height="16">
 										</span>
@@ -93,7 +93,37 @@
 								<span class="cart-btn__text">
 									Корзина
 								</span>
+								<span class="cart-btn__counter">
+									1
+								</span>
 							</button>
+							<div class="cart">
+								<div class="cart__wrapper">
+									<div class="basket-item basket-item--small">
+										<div class="basket-item__img">
+											<img src="images/basket/product.png" alt="">
+										</div>
+										<div class="basket-item__wrap">
+											<div class="basket-item__name">
+												Рабочее место серии «BASE SET»
+											</div>
+										</div>
+										<div class="basket-item__price">
+											<div class="price-current">
+												32 500 ₽
+											</div>
+											<div class="price-old">
+												48 000 ₽
+											</div>
+										</div>
+										<button class="basket-item__delete">
+											<img src="images/icon/delete.svg" alt="">
+											<span>Удалить</span>
+										</button>
+									</div>
+								</div>
+								<a href="#" class="b-btn b-btn--primary">Перейти в корзину</a>
+							</div>
 						</div>
 					</div>
 				</div>
