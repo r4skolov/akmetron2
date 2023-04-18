@@ -350,18 +350,28 @@ class MainMenu {
 }
 ;// CONCATENATED MODULE: ./source/js/components/input.js
 const inputAnimate = () => {
-  const inputs = document.querySelectorAll('input');
-  const btnInput = document.querySelector('.form__btn');
+  const inputs = document?.querySelectorAll('input');
+  const btnInput = document?.querySelector('.form__btn');
+  const clearBtn = document?.querySelector('.search-mobile__clear');
+  const searchMobInput = document.querySelector('.search-mobile__input');
   inputs.forEach(input => {
     input.addEventListener('input', () => {
       if (input.value) {
         input.classList.add('form__input--active');
         btnInput.classList.add('form__btn--active');
+        clearBtn.classList.add('active');
       } else {
         input.classList.remove('form__input--active');
         btnInput.classList.remove('form__btn--active');
+        clearBtn.classList.remove('active');
       }
     });
+  });
+  clearBtn.addEventListener('click', () => {
+    searchMobInput.value = '';
+    if (searchMobInput.value === '') {
+      clearBtn.classList.remove('active');
+    }
   });
 };
 /* harmony default export */ const input = (inputAnimate);
@@ -441,7 +451,48 @@ const popupsFunc = (() => {
   };
 })();
 /* harmony default export */ const modal = (popupsFunc);
+;// CONCATENATED MODULE: ./source/js/components/menu.js
+
+const menu = () => {
+  const burgerEl = document?.querySelector('[data-burger]');
+  const menu = document?.querySelector('[data-menu]');
+  const targetElement = document.querySelector('body');
+  const catalogItem = document.querySelectorAll('.mobile-catalog__item');
+  const catalogSubItem = document.querySelectorAll('.catalog-item');
+  const catalogBack = document.querySelectorAll('.catalog-item__back');
+  burgerEl?.addEventListener('click', () => {
+    burgerEl?.classList.toggle('burger--active');
+    menu?.classList.toggle('active');
+    if (menu?.classList.contains('active')) {
+      burgerEl?.setAttribute('aria-expanded', 'true');
+      burgerEl?.setAttribute('aria-label', 'Сlose menu');
+      bodyScrollLock_esm_disableBodyScroll(targetElement);
+    } else {
+      burgerEl?.setAttribute('aria-expanded', 'false');
+      burgerEl?.setAttribute('aria-label', 'Open menu');
+      bodyScrollLock_esm_enableBodyScroll(targetElement);
+    }
+  });
+  catalogItem.forEach(el => {
+    el.addEventListener('click', e => {
+      const currentBtn = e.currentTarget;
+      const rightMenu = currentBtn.closest('.mobile-catalog__item').querySelector('.catalog-item');
+      rightMenu.classList.toggle('active');
+    });
+  });
+  catalogBack.forEach(el => {
+    el.addEventListener('click', e => {
+      if (e.target.classList.contains('active')) {
+        catalogSubItem.forEach(el => {
+          el.classList.remove('active');
+        });
+      }
+    });
+  });
+};
+/* harmony default export */ const components_menu = (menu);
 ;// CONCATENATED MODULE: ./source/js/index.js
+
 
 
 
@@ -449,6 +500,7 @@ const popupsFunc = (() => {
 
 // Init
 function init() {
+  components_menu();
   input();
   modal.init();
   function footerMenu() {
@@ -505,6 +557,12 @@ function init() {
     });
   }
   cart();
+  const appHeight = () => {
+    const doc = document.documentElement;
+    doc.style.setProperty('--app-height', `${window.innerHeight}px`);
+  };
+  window.addEventListener('resize', appHeight);
+  appHeight();
 }
 (function () {
   init();
