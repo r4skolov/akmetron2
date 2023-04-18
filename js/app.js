@@ -460,19 +460,33 @@ const menu = () => {
   const catalogItem = document.querySelectorAll('.mobile-catalog__item');
   const catalogSubItem = document.querySelectorAll('.catalog-item');
   const catalogBack = document.querySelectorAll('.catalog-item__back');
+  function disableScroll() {
+    let pagePosition = window.scrollY;
+    let paddingOffset = window.innerWidth - document.body.offsetWidth + 'px';
+    document.body.classList.add('scroll');
+    document.body.dataset.position = pagePosition;
+    document.body.style.paddingRight = paddingOffset;
+  }
+  function enableScroll() {
+    document.body.classList.remove('scroll');
+    document.body.removeAttribute('data-position');
+  }
   burgerEl?.addEventListener('click', () => {
     burgerEl?.classList.toggle('burger--active');
     menu?.classList.toggle('active');
     if (menu?.classList.contains('active')) {
       burgerEl?.setAttribute('aria-expanded', 'true');
       burgerEl?.setAttribute('aria-label', 'Сlose menu');
-      bodyScrollLock_esm_disableBodyScroll(targetElement);
+      disableScroll();
+      // disableBodyScroll(targetElement);
     } else {
       burgerEl?.setAttribute('aria-expanded', 'false');
       burgerEl?.setAttribute('aria-label', 'Open menu');
-      bodyScrollLock_esm_enableBodyScroll(targetElement);
+      enableScroll();
+      // enableBodyScroll(targetElement);
     }
   });
+
   catalogItem.forEach(el => {
     el.addEventListener('click', e => {
       const currentBtn = e.currentTarget;
